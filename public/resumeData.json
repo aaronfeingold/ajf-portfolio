@@ -2,9 +2,9 @@
   "main": {
     "name":"Aaron Feingold",
     "occupation":"Software Engineer",
-    "description":"I make apps for people with an appetite.",
+    "description":"I make apps for people with an appetite",
     "image":"profilepic.jpg",
-    "bio":"Guitarist, pit-master, passionate about the outdoors, actively coding projects to help businesses grow online. 5+ years outside sales experience. Looking to revolutionize the food and wine industry by developing systems for frontline workers.",
+    "bio":"Guitarist, pit-master, passionate about the outdoors, actively coding projects to help businesses transform. Bringing 5+ years of outside sales experience online. Looking to revolutionize the food and wine industry by developing systems for frontline workers.",
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
     "email": "ajfeingold88@gmail.com",
     "phone": "555-555-5555",
@@ -55,21 +55,21 @@
         "company":"Republic National Distributing Company",
         "title":"On-Premise Sales Representative",
         "years":"April 2015 - May 2020",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description":"Slinging wine in the coolest city in America. Would go above and beyond for my clients to help their businesses profit."
       }
     ],
     "skills":[
       {
         "name":"CSS",
-        "level":"60%"
+        "level":"50%"
       },
       {
         "name":"Git",
-        "level":"80%"
+        "level":"60%"
       },
       {
         "name":"HTML",
-        "level":"75%"
+        "level":"60%"
       },
       {
         "name":"JavaScript",
@@ -95,7 +95,7 @@
         "title":"Prepped Nola",
         "category":"Kitchen Fatigue? Use this app to build weekly meal plans, and save time and engergy",
         "image":"prepped-nola-screenshot.jpg",
-        "url":"https://inspiring-hodgkin-88d8a2.netlify.app/"
+        "url":"https://meals-prepped-nola.netlify.app"
       },
       {
         "title":"My_Winery",
