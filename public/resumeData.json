@@ -35,19 +35,19 @@
     ]
   },
   "resume":{
-    "skillmessage":"With aspirations to grow my tech stack, I'm currently delving into Elixir, Python, and Node.js. Here's the current working breakdown: ",
+    "skillmessage":"MERN, Linux, : ",
     "education":[
-      {
-        "school":"Tulane University",
-        "degree":"Political Science and Latin American Studies",
-        "graduated":"April 2010",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
-      },
       {
         "school":"The Flatiron School",
         "degree":"Software Engineering",
         "graduated":"November 2020",
         "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+      },
+      {
+        "school":"Tulane University",
+        "degree":"Political Science and Latin American Studies",
+        "graduated":"April 2010",
+        "description":"Fun, very fun"
       }
     ],
     "work":[
@@ -55,7 +55,7 @@
         "company":"Republic National Distributing Company",
         "title":"On-Premise Sales Representative",
         "years":"April 2015 - May 2020",
-        "description":"Slinging wine in the coolest city in America. Would go above and beyond for my clients to help their businesses profit."
+        "description":"Slinging wine in the coolest city in America."
       }
     ],
     "skills":[
@@ -81,11 +81,11 @@
       },
       {
         "name":"React",
-        "level":"40%"
+        "level":"50%"
       },
       {
         "name":"Ruby-on-Rails",
-        "level":"60%"
+        "level":"10%"
       }
     ]
   },
