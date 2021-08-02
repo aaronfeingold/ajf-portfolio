@@ -189,6 +189,9 @@
 }
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
    readers do not read off random characters that represent icons */
+.fa-js:before {
+  content: "\f3b8";
+}
 .fa-glass:before {
   content: "\f000";
 }
