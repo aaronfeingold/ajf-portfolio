@@ -2,14 +2,11 @@ import React from 'react';
 
 const about = (props) => {
 
-   let { name, image, bio, address, email, resumeDownload } = props.data ? props.data : "";
-   let profilepic = "images/"+image;
-   let city, state;
-   if (props.data){
-      city = address.city;
-      state = address.state
+   let image; let bio; let email; let resumeDownload;
+   if (props.data) {
+      ({ image, bio, email, resumeDownload } = props.data)
    }
-
+   let profilepic = `images/${image}`;
 
    return (
       <section id="about">
@@ -24,10 +21,6 @@ const about = (props) => {
                   <div className="columns contact-details">
                      <h2>Contact Details</h2>
                      <p className="address">
-                        <span>{name}</span><br />
-                        <span>{city}<br />
-                              {state}
-                        </span><br />
                         <span>{email}</span>
                      </p>
                   </div>

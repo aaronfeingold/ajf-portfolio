@@ -2,9 +2,9 @@
   "main": {
     "name":"Aaron Feingold",
     "occupation":"Software Engineer",
-    "description":"I make apps for people with an appetite",
+    "description":"Making apps for people with an appetite",
     "image":"profilepic.jpg",
-    "bio":"A problem solver by day, a musician bt night",
+    "bio":"A problem solver by day, a musician by night",
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
     "email": "ajfeingold88@gmail.com",
     "phone": "555-555-5555",
