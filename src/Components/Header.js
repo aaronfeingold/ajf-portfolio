@@ -1,10 +1,10 @@
 import React from 'react';
 
 const header = (props) => {
-   let { name, occupation, description, address, social } = props.data ? props.data : "";
-   let city
-   let networks;
-   if (props.data){
+   let name; let occupation; let description; let address; let social; let city; let networks;
+
+   if (props.data) {
+      ({ name, occupation, description, address, social } = props.data)
       city = address.city
       networks= social.map(function(network){
          return <li key={network.name}><a href={network.url} target="_blank" rel="noopener noreferrer"><i className={network.className}></i></a></li>
