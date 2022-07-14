@@ -2,7 +2,7 @@
   "main": {
     "name":"Aaron Feingold",
     "occupation":"Software Engineer",
-    "description":"Making apps for people with an appetite",
+    "description":"Making apps for folks with an appetite",
     "image":"profilepic.jpg",
     "bio":"A problem solver by day, a musician by night, and a weekend warrior on the rocks",
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
@@ -30,7 +30,7 @@
     ]
   },
   "resume":{
-    "skillmessage":"Proficient DevOps skills in AWS, Azure, GCP, and VMWare Cloud Director",
+    "skillmessage":"Proficient DevOps skills in AWS, Azure, GCP, and VMWare Cloud Director. Other tech skills with measures of competence",
     "education":[
       {
         "school":"The Flatiron School",
@@ -68,11 +68,6 @@
         "level":"100%"
       },
       {
-        "name":"git",
-        "desc":"Git/GitLab/GitHub",
-        "level":"100%"
-      },
-      {
         "name":"reactjs",
         "desc":"React-Redux/JSX/TSX",
         "level":"90%"
@@ -80,7 +75,7 @@
       {
         "name":"nodejs",
         "desc":"NodeJS/ExpressJS",
-        "level":"80%"
+        "level":"90%"
       },
       {
         "name":"mongo",
@@ -89,8 +84,13 @@
       },
       {
         "name":"linux",
-        "desc":"Linux/ARCH/Ubuntu/RedHat",
+        "desc":"RHEL/CentOs/Ubuntu/Arch/Rocky",
         "level":"80%"
+      },
+      {
+        "name":"git",
+        "desc":"Git on GitLab/Hub",
+        "level":"100%"
       }
     ]
   },
