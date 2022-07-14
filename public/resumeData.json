@@ -2,9 +2,9 @@
   "main": {
     "name":"Aaron Feingold",
     "occupation":"Software Engineer",
-    "description":"I make apps for people with an appetite",
+    "description":"Making apps for people with an appetite",
     "image":"profilepic.jpg",
-    "bio":"Guitarist, pit-master, passionate about the outdoors, actively coding projects to help businesses transform. Bringing 5+ years of outside sales experience online. Looking to revolutionize the food and wine industry by developing systems for frontline workers.",
+    "bio":"A problem solver by day, a musician by night, and a weekend warrior on the rocks",
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
     "email": "ajfeingold88@gmail.com",
     "phone": "555-555-5555",
@@ -15,13 +15,8 @@
       "zip": "70115"
     },
     "website": "https://a-feingold.medium.com/",
-    "resumedownload":"https://docs.google.com/document/d/e/2PACX-1vQ-oh4WJvRbHYTSF5YpRls6lNzplyL8_a0o-E00m2bay9Yhplu5l-58e0aRfYSO3w37BeE_Rg3JSTX1/pub",
+    "resumeDownload":"https://docs.google.com/document/d/e/2PACX-1vRaI0e3eCvTCFZKI0IEmEjJr6FhmhtZSvIgzugUV4SQuMZ5jPNjGR2eAY13v2eCIj1ZvjBPkdwH9vv7/pub",
     "social":[
-      {
-        "name":"twitter",
-        "url":"https://twitter.com/feingold_aaron",
-        "className":"fa fa-twitter"
-      },
       {
         "name":"linkedin",
         "url":"https://www.linkedin.com/in/aaron-feingold/",
@@ -35,57 +30,67 @@
     ]
   },
   "resume":{
-    "skillmessage":"With aspirations to grow my tech stack, I'm currently delving into Elixir, Python, and Node.js. Here's the current working breakdown: ",
+    "skillmessage":"Proficient DevOps skills in AWS, Azure, GCP, and VMWare Cloud Director",
     "education":[
+      {
+        "school":"The Flatiron School",
+        "url":"https://flatironschool.com/",
+        "degree":"Software Engineering",
+        "graduated":"November 2020",
+        "description":"RoR and React. Prog Web Sites. "
+      },
       {
         "school":"Tulane University",
         "degree":"Political Science and Latin American Studies",
         "graduated":"April 2010",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
-      },
-      {
-        "school":"The Flatiron School",
-        "degree":"Software Engineering",
-        "graduated":"November 2020",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "description":"College was fun, very fun"
       }
     ],
     "work":[
       {
+        "company":"Code Willing",
+        "title":"Junior Platform Developer",
+        "years":"June 2021 - Present",
+        "description":"Creating a cloud-first laboratory for HFT"
+      },
+      {
         "company":"Republic National Distributing Company",
         "title":"On-Premise Sales Representative",
         "years":"April 2015 - May 2020",
-        "description":"Slinging wine in the coolest city in America. Would go above and beyond for my clients to help their businesses profit."
+        "description":"Selling wine full time."
       }
     ],
     "skills":[
       {
-        "name":"CSS",
-        "level":"50%"
+        "name":"reactjs",
+        "className":"fa fa-linkedin",
+        "desc":"JavaScript/Type-Script",
+        "level":"100%"
       },
       {
-        "name":"Git",
-        "level":"60%"
+        "name":"git",
+        "desc":"Git/GitLab/GitHub",
+        "level":"100%"
       },
       {
-        "name":"HTML",
-        "level":"60%"
+        "name":"reactjs",
+        "desc":"React-Redux/JSX/TSX",
+        "level":"90%"
       },
       {
-        "name":"JavaScript",
-        "level":"50%"
+        "name":"nodejs",
+        "desc":"NodeJS/ExpressJS",
+        "level":"80%"
       },
       {
-        "name":"Postgres",
-        "level":"50%"
+        "name":"mongo",
+        "desc":"MongoDB/Atlas",
+        "level":"80%"
       },
       {
-        "name":"React",
-        "level":"40%"
-      },
-      {
-        "name":"Ruby-on-Rails",
-        "level":"60%"
+        "name":"linux",
+        "desc":"Linux/ARCH/Ubuntu/RedHat",
+        "level":"80%"
       }
     ]
   },

@@ -169,7 +169,7 @@ ul#nav li a {
    line-height: 32px;
 	text-decoration: none;
    text-align: left;
-   color: #fff;
+   color: rgb(0, 0, 0);
 
 	-webkit-transition: color .2s ease-in-out;
 	-moz-transition: color .2s ease-in-out;
@@ -207,8 +207,8 @@ ul#nav li.current a { color: #F06000; }
 }
 #about .profile-pic {
    position: relative;
-   width: 120px;
-   height: 120px;
+   width: 180px;
+   height: 200px;
    border-radius: 100%;
 }
 #about .contact-details { width: 41.66667%; }
@@ -253,9 +253,11 @@ ul#nav li.current a { color: #F06000; }
 #resume h1 span {
    border-bottom: 3px solid #11ABB0;
    padding-bottom: 6px;
+   color: #313131;
 }
 #resume h3 {
    font: 25px/30px 'opensans-bold', sans-serif;
+   color: #313131;
 }
 
 #resume .header-col { padding-top: 9px; }
@@ -265,10 +267,11 @@ ul#nav li.current a { color: #F06000; }
    margin-bottom: 48px;
    padding-bottom: 24px;
    border-bottom: 1px solid #E8E8E8;
+   color: #313131;
 }
 #resume .info {
    font: 16px/24px 'librebaskerville-italic', serif;
-   color: #6E7881;
+   color: #011b31;
    margin-bottom: 18px;
    margin-top: 9px;
 }
@@ -324,6 +327,11 @@ ul#nav li.current a { color: #F06000; }
    line-height: 42px;
    border-radius: 3px 0 0 3px;
 }
+
+.reactjs {
+     -moz-animation: reactjs 2s ease;
+     -webkit-animation: reactjs 2s ease;
+}
 /*
 .git {
   	-moz-animation: git 2s ease;
@@ -332,10 +340,6 @@ ul#nav li.current a { color: #F06000; }
 .illustrator {
   	-moz-animation: illustrator 2s ease;
   	-webkit-animation: illustrator 2s ease;
-}
-.reactjs {
-  	-moz-animation: reactjs 2s ease;
-  	-webkit-animation: reactjs 2s ease;
 }
 .css {
   	-moz-animation: css 2s ease;
