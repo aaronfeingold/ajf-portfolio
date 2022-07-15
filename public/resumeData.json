@@ -34,7 +34,7 @@
       {
         "school":"The Flatiron School",
         "url":"https://flatironschool.com/",
-        "degree":"Software Engineering",
+        "degree":"Full-stack Web Development",
         "graduated":"November 2020",
         "description":"React, Rails, and Postgresql"
       },
@@ -72,7 +72,6 @@
     "skills":[
       {
         "name":"reactjs",
-        "className":"fa fa-linkedin",
         "desc":"JavaScript/Type-Script",
         "level":"100%"
       },
@@ -100,6 +99,16 @@
         "name":"git",
         "desc":"Git on GitLab/Hub",
         "level":"100%"
+      },
+      {
+        "name":"python",
+        "desc":"Python",
+        "level":"75%"
+      },
+      {
+        "name":"bash",
+        "desc":"Bash",
+        "level":"45%"
       }
     ]
   },
