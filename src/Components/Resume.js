@@ -17,12 +17,12 @@ const resume = (props) => {
     })
     work = props.data.work.map(function(work){
       return <div key={work.company}><h3>{work.company}</h3>
-          <p className="info">{work.title}<span>&bull;</span> <em className="date">{work.years}</em></p>
+          <p className="info">{work.title}<span>&bull;</span> <em className="date">{work.years}</em><span>&bull;</span> <em className="date">{work.location}</em></p>
           <p>{work.description}</p>
       </div>
     })
     skills = props.data.skills.map(function(skill){
-      const className = 'bar-expand '+skill.name?.toLowerCase();
+      const className = `bar-expand ${skill.name.toLowerCase()}`;
       return <li key={skill.name}><span style={{width:skill.level}}className={className}></span><i className="fa fa-linkedin"></i><em>{skill.desc}</em></li>
     })
   }

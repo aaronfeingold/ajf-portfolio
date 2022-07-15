@@ -1,18 +1,18 @@
 {
   "main": {
     "name":"Aaron Feingold",
-    "occupation":"Software Engineer",
-    "description":"Making apps for folks with an appetite",
+    "occupation":"Digital Nomad",
+    "description":"",
     "image":"profilepic.jpg",
     "bio":"A problem solver by day, a musician by night, and a weekend warrior on the rocks",
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
     "email": "ajfeingold88@gmail.com",
     "phone": "555-555-5555",
     "address":{
-      "street":"2208 Cadiz St.",
+      "street":"123 Some St.",
       "city":"New Orleans",
       "state":"LA",
-      "zip": "70115"
+      "zip": "12345"
     },
     "website": "https://a-feingold.medium.com/",
     "resumeDownload":"https://docs.google.com/document/d/e/2PACX-1vRaI0e3eCvTCFZKI0IEmEjJr6FhmhtZSvIgzugUV4SQuMZ5jPNjGR2eAY13v2eCIj1ZvjBPkdwH9vv7/pub",
@@ -30,14 +30,13 @@
     ]
   },
   "resume":{
-    "skillmessage":"Proficient DevOps skills in AWS, Azure, GCP, and VMWare Cloud Director. Other tech skills with measures of competence",
     "education":[
       {
         "school":"The Flatiron School",
         "url":"https://flatironschool.com/",
         "degree":"Software Engineering",
         "graduated":"November 2020",
-        "description":"RoR and React. Prog Web Sites. "
+        "description":"React, Rails, and Postgresql"
       },
       {
         "school":"Tulane University",
@@ -50,16 +49,26 @@
       {
         "company":"Code Willing",
         "title":"Junior Platform Developer",
+        "location":"New Orleans, LA",
         "years":"June 2021 - Present",
-        "description":"Creating a cloud-first laboratory for HFT"
+        "description":"DevOps and MERN engineer creating a Big Data, cloud-based ML laboratory for HFT"
+      },
+      {
+        "company":"KIPP Schools",
+        "title":"Database Engineer",
+        "location":"New Orleans, LA",
+        "years":"April 2021 - June 2021",
+        "description":"Python mapper for MYSQL to aggregate data pipelines for state reporting"
       },
       {
         "company":"Republic National Distributing Company",
         "title":"On-Premise Sales Representative",
+        "location":"New Orleans, LA",
         "years":"April 2015 - May 2020",
         "description":"Selling wine full time."
       }
     ],
+    "skillmessage":"Typically spawning and destroying hundreds of VMs a day in AWS, Azure, GCP, and VMWare Cloud Director. Here's the breakdown of the tech involved in my everyday development, and the percent likeliness for each to be used on any given day:",
     "skills":[
       {
         "name":"reactjs",
