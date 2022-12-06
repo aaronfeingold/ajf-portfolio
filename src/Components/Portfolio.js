@@ -34,7 +34,7 @@ const portfolio = (props) => {
       <div className="row">
          <div className="twelve columns collapsed">
             <h1>Check Out Some of My Work.</h1>
-            <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
+            <div id="portfolio-wrapper" className="bgrid-halves s-bgrid-thirds cf">
                 {projects}
             </div>
           </div>
