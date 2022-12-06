@@ -4,7 +4,7 @@
     "occupation":"Digital Nomad",
     "description":"",
     "image":"profilepic.jpg",
-    "bio":"A problem solver by day, a musician by night, and a weekend warrior on the rocks",
+    "bio":"A problem solver by day, a musician by night, and a weekend warrior on the rocks.",
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
     "email": "ajfeingold88@gmail.com",
     "phone": "555-555-5555",
@@ -76,6 +76,11 @@
         "level":"100%"
       },
       {
+        "name":"git",
+        "desc":"Git on GitLab/Hub",
+        "level":"100%"
+      },
+      {
         "name":"reactjs",
         "desc":"React-Redux/JSX/TSX",
         "level":"90%"
@@ -96,19 +101,19 @@
         "level":"80%"
       },
       {
-        "name":"git",
-        "desc":"Git on GitLab/Hub",
-        "level":"100%"
-      },
-      {
         "name":"python",
         "desc":"Python",
-        "level":"75%"
+        "level":"80%"
       },
       {
         "name":"bash",
         "desc":"Bash",
-        "level":"45%"
+        "level":"75%"
+      },
+      {
+        "name":"packer",
+        "desc":"Packer",
+        "level":"50%"
       }
     ]
   },
