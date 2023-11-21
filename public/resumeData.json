@@ -48,10 +48,16 @@
     "work":[
       {
         "company":"Code Willing",
-        "title":"Junior Platform Developer",
+        "title":"Lead Full-Stack Developer",
         "location":"New Orleans, LA",
-        "years":"June 2021 - Present",
+        "years":"January 2023 - Present",
         "description":"DevOps and MERN engineer creating a Big Data, cloud-based ML laboratory for HFT"
+      },
+      {
+        "company":"Code Willing",
+        "title":"Platform Developer",
+        "location":"New Orleans, LA",
+        "years":"June 2021 - January 2023",
       },
       {
         "company":"KIPP Schools",
