@@ -22,7 +22,6 @@ class App extends Component {
 
     fetch("resumeData.json", {
       headers: myHeaders,
-
     })
       .then(response => {
         return response.json();
