@@ -42,7 +42,7 @@
         "school":"Tulane University",
         "degree":"Political Science and Latin American Studies",
         "graduated":"April 2010",
-        "description":"College was fun, very fun"
+        "description":"Tulane was fine, but  New Orleans is awesome, so I never left"
       }
     ],
     "work":[
@@ -57,7 +57,7 @@
         "company":"Code Willing",
         "title":"Platform Developer",
         "location":"New Orleans, LA",
-        "years":"June 2021 - January 2023",
+        "years":"June 2021 - January 2023"
       },
       {
         "company":"KIPP Schools",
@@ -74,7 +74,7 @@
         "description":"Selling wine full time."
       }
     ],
-    "skillmessage":"Typically spawning and destroying hundreds of VMs a day in AWS, Azure, GCP, and VMWare Cloud Director. Here's the breakdown of the tech involved in my everyday development, and the percent likeliness for each to be used on any given day:",
+    "skillmessage":"Here's the percent likeliness of various tech stuff to be used on any given day:",
     "skills":[
       {
         "name":"reactjs",

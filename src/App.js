@@ -25,11 +25,9 @@ class App extends Component {
 
     })
       .then(response => {
-        console.log(response);
         return response.json();
       })
       .then(data => {
-        console.log(data);
         this.setState({ resumeData: data });
       });
   }
