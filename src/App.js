@@ -15,13 +15,13 @@ class App extends Component {
   }
 
   getResumeData(){
-    const myHeaders = new Headers({
+    const headers = new Headers({
       'Content-Type': "application/json",
       'Accept': "application/json"
     });
 
     fetch("resumeData.json", {
-      headers: myHeaders,
+      headers,
     })
       .then(response => {
         return response.json();
