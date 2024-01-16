@@ -15,7 +15,7 @@
       "zip": "12345"
     },
     "website": "https://a-feingold.medium.com/",
-    "resumeDownload":"https://docs.google.com/document/d/e/2PACX-1vSlxdGsY2SMlAsdFNI3whWA0yh8eyKjte47pVwfoYuBEc4WFh6ASFSe8mVQVYiNjnfZzTa5ccuI4VuG/pub",
+    "resumeDownload":"https://docs.google.com/document/d/e/2PACX-1vTdxYHZUWMrem-83YtS8EVJOqVR2SI2qpjo1Y65b4pbOnzDp9Bng4Lo5AP5ejtoaP_TCeDcteIGqsfs/pub",
     "social":[
       {
         "name":"linkedin",
@@ -42,16 +42,22 @@
         "school":"Tulane University",
         "degree":"Political Science and Latin American Studies",
         "graduated":"April 2010",
-        "description":"College was fun, very fun"
+        "description":"Tulane was fine, but  New Orleans is awesome, so I never left"
       }
     ],
     "work":[
       {
         "company":"Code Willing",
-        "title":"Junior Platform Developer",
+        "title":"Lead Full-Stack Developer",
         "location":"New Orleans, LA",
-        "years":"June 2021 - Present",
+        "years":"January 2023 - Present",
         "description":"DevOps and MERN engineer creating a Big Data, cloud-based ML laboratory for HFT"
+      },
+      {
+        "company":"Code Willing",
+        "title":"Platform Developer",
+        "location":"New Orleans, LA",
+        "years":"June 2021 - January 2023"
       },
       {
         "company":"KIPP Schools",
@@ -68,7 +74,7 @@
         "description":"Selling wine full time."
       }
     ],
-    "skillmessage":"Typically spawning and destroying hundreds of VMs a day in AWS, Azure, GCP, and VMWare Cloud Director. Here's the breakdown of the tech involved in my everyday development, and the percent likeliness for each to be used on any given day:",
+    "skillmessage":"Here's the percent likeliness of various tech stuff to be used on any given day:",
     "skills":[
       {
         "name":"reactjs",
