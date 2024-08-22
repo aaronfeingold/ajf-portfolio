@@ -1,141 +1,141 @@
 {
   "main": {
-    "name":"Aaron Feingold",
-    "occupation":"Software Engineer",
-    "description":"",
-    "image":"profilepic.jpg",
-    "bio":"A problem solver by day, a musician by night, and a weekend warrior on the rocks.",
-    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
+    "name": "Aaron Feingold",
+    "occupation": "Software Engineer",
+    "description": "",
+    "image": "profilepic.jpg",
+    "bio": "My greatest passion and the thing I am best at is: playing guitar. Second to that is learning all about how great wine is made. Most of my free time is spent rock climbing, trail running, cooking elaborate dishes, meditating, and reading sci-fi. I've always wanted to create some large body of work that contributes to our understanding of human perception. When I began developing software, I found that it held more instruments for me to play with, opening new doors to possibilities of what I may create. Its my philosophy that the best software will help us to put down devices, and be able to step away from keyboards to experience the world",
+    "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
     "email": "ajfeingold88@gmail.com",
     "phone": "555-555-5555",
-    "address":{
-      "street":"123 Some St.",
-      "city":"New Orleans",
-      "state":"LA",
+    "address": {
+      "street": "123 Some St.",
+      "city": "New Orleans",
+      "state": "LA",
       "zip": "12345"
     },
     "website": "https://a-feingold.medium.com/",
-    "resumeDownload":"https://docs.google.com/document/d/e/2PACX-1vTdxYHZUWMrem-83YtS8EVJOqVR2SI2qpjo1Y65b4pbOnzDp9Bng4Lo5AP5ejtoaP_TCeDcteIGqsfs/pub",
-    "social":[
+    "resumeDownload": "https://docs.google.com/document/d/e/2PACX-1vTdxYHZUWMrem-83YtS8EVJOqVR2SI2qpjo1Y65b4pbOnzDp9Bng4Lo5AP5ejtoaP_TCeDcteIGqsfs/pub",
+    "social": [
       {
-        "name":"linkedin",
-        "url":"https://www.linkedin.com/in/aaron-feingold/",
-        "className":"fa fa-linkedin"
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/aaron-feingold/",
+        "className": "fa fa-linkedin"
       },
       {
-        "name":"github",
-        "url":"https://github.com/aaronfeingold",
-        "className":"fa fa-github"
+        "name": "github",
+        "url": "https://github.com/aaronfeingold",
+        "className": "fa fa-github"
       }
     ]
   },
-  "resume":{
-    "education":[
+  "resume": {
+    "education": [
       {
-        "school":"The Flatiron School",
-        "url":"https://flatironschool.com/",
-        "degree":"Full-stack Web Development",
-        "graduated":"November 2020",
-        "description":"React, Rails, and Postgresql"
+        "school": "The Flatiron School",
+        "url": "https://flatironschool.com/",
+        "degree": "Full-stack Web Development",
+        "graduated": "November 2020",
+        "description": "React, Rails, and Postgresql"
       },
       {
-        "school":"Tulane University",
-        "degree":"Political Science and Latin American Studies",
-        "graduated":"April 2010",
-        "description":"Tulane was fine, but  New Orleans is awesome, so I never left"
+        "school": "Tulane University",
+        "degree": "Political Science and Latin American Studies",
+        "graduated": "April 2010",
+        "description": "Tulane was fine, but  New Orleans is awesome, so I never left"
       }
     ],
-    "work":[
+    "work": [
       {
-        "company":"Code Willing",
-        "title":"Lead Full-Stack Developer",
-        "location":"New Orleans, LA",
-        "years":"January 2023 - Present",
-        "description":"DevOps and MERN engineer creating a Big Data, cloud-based ML laboratory for HFT"
+        "company": "Code Willing",
+        "title": "Lead Full-Stack Developer",
+        "location": "New Orleans, LA",
+        "years": "January 2023 - Present",
+        "description": "DevOps and MERN engineer creating a Big Data, cloud-based ML laboratory for HFT"
       },
       {
-        "company":"Code Willing",
-        "title":"Platform Developer",
-        "location":"New Orleans, LA",
-        "years":"June 2021 - January 2023"
+        "company": "Code Willing",
+        "title": "Platform Developer",
+        "location": "New Orleans, LA",
+        "years": "June 2021 - January 2023"
       },
       {
-        "company":"KIPP Schools",
-        "title":"Database Engineer",
-        "location":"New Orleans, LA",
-        "years":"April 2021 - June 2021",
-        "description":"Python mapper for MYSQL to aggregate data pipelines for state reporting"
+        "company": "KIPP Schools",
+        "title": "Database Engineer",
+        "location": "New Orleans, LA",
+        "years": "April 2021 - June 2021",
+        "description": "Python mapper for MYSQL to aggregate data pipelines for state reporting"
       },
       {
-        "company":"Republic National Distributing Company",
-        "title":"On-Premise Sales Representative",
-        "location":"New Orleans, LA",
-        "years":"April 2015 - May 2020",
-        "description":"Selling wine full time."
+        "company": "Republic National Distributing Company",
+        "title": "On-Premise Sales Representative",
+        "location": "New Orleans, LA",
+        "years": "April 2015 - May 2020",
+        "description": "Selling wine full time."
       }
     ],
-    "skillmessage":"Here's the percent likeliness of various tech stuff to be used on any given day:",
-    "skills":[
+    "skillmessage": "Here's the percent likeliness of various tech stuff to be used on any given day: ",
+    "skills": [
       {
-        "name":"reactjs",
-        "desc":"JavaScript/Type-Script",
-        "level":"100%"
+        "name": "reactjs",
+        "desc": "JavaScript/Type-Script",
+        "level": "100%"
       },
       {
-        "name":"git",
-        "desc":"Git on GitLab/Hub",
-        "level":"100%"
+        "name": "git",
+        "desc": "Git on GitLab/Hub",
+        "level": "100%"
       },
       {
-        "name":"reactjs",
-        "desc":"React-Redux/JSX/TSX",
-        "level":"90%"
+        "name": "reactjs",
+        "desc": "React-Redux/JSX/TSX",
+        "level": "90%"
       },
       {
-        "name":"nodejs",
-        "desc":"NodeJS/ExpressJS",
-        "level":"90%"
+        "name": "nodejs",
+        "desc": "NodeJS/ExpressJS",
+        "level": "90%"
       },
       {
-        "name":"mongo",
-        "desc":"MongoDB/Atlas",
-        "level":"80%"
+        "name": "mongo",
+        "desc": "MongoDB/Atlas",
+        "level": "80%"
       },
       {
-        "name":"linux",
-        "desc":"RHEL/CentOs/Ubuntu/Arch/Rocky",
-        "level":"80%"
+        "name": "linux",
+        "desc": "RHEL/CentOs/Ubuntu/Arch/Rocky",
+        "level": "80%"
       },
       {
-        "name":"python",
-        "desc":"Python",
-        "level":"80%"
+        "name": "python",
+        "desc": "Python",
+        "level": "80%"
       },
       {
-        "name":"bash",
-        "desc":"Bash",
-        "level":"75%"
+        "name": "bash",
+        "desc": "Bash",
+        "level": "75%"
       },
       {
-        "name":"packer",
-        "desc":"Packer",
-        "level":"50%"
+        "name": "packer",
+        "desc": "Packer",
+        "level": "50%"
       }
     ]
   },
-  "portfolio":{
+  "portfolio": {
     "projects": [
       {
-        "title":"Prepped Nola",
-        "category":"Kitchen Fatigue? Use this app to build weekly meal plans, and save time and engergy",
-        "image":"prepped-nola-screenshot.jpg",
-        "url":"https://meals-prepped-nola.netlify.app"
+        "title": "Prepped Nola",
+        "category": "Kitchen Fatigue? Use this app to build weekly meal plans, and save time and engergy",
+        "image": "prepped-nola-screenshot.jpg",
+        "url": "https://meals-prepped-nola.netlify.app"
       },
       {
-        "title":"My_Winery",
-        "category":"Too many barrels in the cellar? Use this to decide what needs to get bottled asap",
-        "image":"my-winery-screenshot.jpg",
-        "url":"https://my-winery-1.herokuapp.com/"
+        "title": "My_Winery",
+        "category": "Too many barrels in the cellar? Use this to decide what needs to get bottled asap",
+        "image": "my-winery-screenshot.jpg",
+        "url": "https://my-winery-1.herokuapp.com/"
       }
     ]
   }
