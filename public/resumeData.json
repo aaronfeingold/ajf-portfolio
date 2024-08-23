@@ -1,16 +1,16 @@
 {
   "main": {
     "name": "Aaron Feingold",
-    "occupation": "Software Engineer",
-    "description": "",
+    "occupation": "Software Developer",
+    "description": "guitarist, sommelier, and software developer",
     "image": "profilepic.jpg",
-    "bio": "My greatest passion and the thing I am best at is: playing guitar. \nSecond to that is learning all about how great wine is made. Most of my free time is spent rock climbing, trail running, cooking elaborate dishes, meditating, and reading sci-fi. I've always wanted to create some large body of work that contributes to our understanding of human perception. When I began developing software, I found that it held more instruments for me to play with, opening new doors to possibilities of what I may create. Its my philosophy that the best software will help us to put down devices, and be able to step away from keyboards to experience the world",
+    "bio": "My greatest passion and the thing I am best at is: playing guitar. Second to that is learning all about how great wine is made. Most of my free time is spent rock climbing, trail running, cooking elaborate dishes, meditating, and reading sci-fi. I've always wanted to create some large body of work that contributes to our understanding of human perception. When I began developing software, I found that it held more instruments for me to play with, opening new doors to possibilities of what I may create one day. Its my philosophy that the best software will help us to put down devices, and be able to step away from keyboards to experience the world. Hopefully I can pull together all my skills and make this happen.",
     "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
     "email": "ajfeingold88@gmail.com",
     "phone": "555-555-5555",
     "address": {
       "street": "123 Some St.",
-      "city": "New Orleans",
+      "city": "New Orleans and New York",
       "state": "LA",
       "zip": "12345"
     },
@@ -50,12 +50,12 @@
         "company": "Code Willing",
         "title": "Lead Full-Stack Developer",
         "location": "New Orleans, LA",
-        "years": "January 2023 - Present",
+        "years": "January 2023 - June 2024",
         "description": "DevOps and MERN engineer creating a Big Data, cloud-based ML laboratory for HFT"
       },
       {
         "company": "Code Willing",
-        "title": "Platform Developer",
+        "title": "DevOps Engineer",
         "location": "New Orleans, LA",
         "years": "June 2021 - January 2023"
       },
