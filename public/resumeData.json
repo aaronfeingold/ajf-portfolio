@@ -4,7 +4,7 @@
     "occupation": "Software Engineer",
     "description": "",
     "image": "profilepic.jpg",
-    "bio": "My greatest passion and the thing I am best at is: playing guitar. Second to that is learning all about how great wine is made. Most of my free time is spent rock climbing, trail running, cooking elaborate dishes, meditating, and reading sci-fi. I've always wanted to create some large body of work that contributes to our understanding of human perception. When I began developing software, I found that it held more instruments for me to play with, opening new doors to possibilities of what I may create. Its my philosophy that the best software will help us to put down devices, and be able to step away from keyboards to experience the world",
+    "bio": "My greatest passion and the thing I am best at is: playing guitar. \nSecond to that is learning all about how great wine is made. Most of my free time is spent rock climbing, trail running, cooking elaborate dishes, meditating, and reading sci-fi. I've always wanted to create some large body of work that contributes to our understanding of human perception. When I began developing software, I found that it held more instruments for me to play with, opening new doors to possibilities of what I may create. Its my philosophy that the best software will help us to put down devices, and be able to step away from keyboards to experience the world",
     "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
     "email": "ajfeingold88@gmail.com",
     "phone": "555-555-5555",
@@ -77,7 +77,7 @@
     "skillmessage": "Here's the percent likeliness of various tech stuff to be used on any given day: ",
     "skills": [
       {
-        "name": "reactjs",
+        "name": "javascript",
         "desc": "JavaScript/Type-Script",
         "level": "100%"
       },
@@ -125,6 +125,12 @@
   },
   "portfolio": {
     "projects": [
+      {
+        "title": "Professional Portfolio",
+        "category": "Tired of social media, but need something to show off? Use this to create a professional portfolio",
+        "image": "jessfeingolddotcom.jpg",
+        "url": "https://jessfeingold.com"
+      },
       {
         "title": "Prepped Nola",
         "category": "Kitchen Fatigue? Use this app to build weekly meal plans, and save time and engergy",
