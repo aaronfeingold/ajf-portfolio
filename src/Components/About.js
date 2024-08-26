@@ -1,13 +1,8 @@
 import React from 'react';
 
-const About = (props) => {
-  let image;
-  let bio;
-  let email;
-  let resumeDownload;
-  if (props.data) {
-    ({ image, bio, email, resumeDownload } = props.data);
-  }
+const About = ({ data }) => {
+  const { image, bio, email, resumeDownload } = data || {};
+
   let profilepic = `images/${image}`;
 
   return (
