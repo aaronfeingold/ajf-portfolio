@@ -3,9 +3,18 @@ import React, { createContext, useState, useEffect } from "react";
 export const ResumeContext = createContext();
 
 const defaultResumeData = {
-  main: {},
+  main: {
+    name: "Default Profile",
+  },
   resume: {},
-  portfolio: {},
+  resume: {
+    education: [],
+    work: [],
+    skills: [],
+  },
+  portfolio: {
+    projects: [],
+  },
 };
 
 export const ResumeProvider = ({ children }) => {
