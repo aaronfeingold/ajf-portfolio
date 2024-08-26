@@ -1,24 +1,22 @@
 import React from "react";
 import NavBar from "./NavBar";
 
-const Header = (props) => {
-  let name;
-  let social;
-  let networks;
-  let description;
+const Header = ({ data }) => {
+  const {
+    name = "Your Name",
+    description = "Your Description",
+    social = [],
+  } = data || {};
 
-  if (props.data) {
-    ({ name, description, social } = props.data);
-    networks = social.map(function (network) {
-      return (
+  const networks = Array.isArray(social)
+    ? social.map((network) => (
         <li key={network.name}>
           <a href={network.url} target="_blank" rel="noopener noreferrer">
             <i className={network.className}></i>
           </a>
         </li>
-      );
-    });
-  }
+      ))
+    : null;
 
   return (
     <header id="home">
