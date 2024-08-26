@@ -1,51 +1,31 @@
-import React, { Component } from 'react';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
-import About from './Components/About';
-import Resume from './Components/Resume';
-import Portfolio from './Components/Portfolio';
+import React, { useContext } from "react";
+import { ResumeProvider, ResumeContext } from "./ResumeContext";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import About from "./Components/About";
+import Resume from "./Components/Resume";
+import Portfolio from "./Components/Portfolio";
 
-class App extends Component {
+const App = () => {
+  const { resumeData, loading } = useContext(ResumeContext);
 
-  constructor(props){
-    super(props);
-    this.state = {
-      resumeData: {}
-    };
-  }
+  return (
+    <div className="App">
+      {loading && <div className="loading-overlay">Loading...</div>}
+      <Header data={resumeData.main} />
+      <About data={resumeData.main} />
+      <Resume data={resumeData.resume} />
+      <Portfolio data={resumeData.portfolio} />
+      <Footer data={resumeData.main} />
+    </div>
+  );
+};
 
-  getResumeData(){
-    const headers = new Headers({
-      'Content-Type': "application/json",
-      'Accept': "application/json"
-    });
+// Wrap App component with ResumeProvider
+const AppWrapper = () => (
+  <ResumeProvider>
+    <App />
+  </ResumeProvider>
+);
 
-    fetch("resumeData.json", {
-      headers,
-    })
-      .then(response => {
-        return response.json();
-      })
-      .then(data => {
-        this.setState({ resumeData: data });
-      });
-  }
-
-  componentDidMount(){
-    this.getResumeData();
-  }
-
-  render() {
-    return (
-      <div className="App">
-        <Header data={this.state.resumeData.main}/>
-        <About data={this.state.resumeData.main}/>
-        <Resume data={this.state.resumeData.resume}/>
-        <Portfolio data={this.state.resumeData.portfolio}/>
-        <Footer data={this.state.resumeData.main}/>
-      </div>
-    );
-  }
-}
-
-export default App;
+export default AppWrapper;
