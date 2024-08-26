@@ -1,22 +1,11 @@
 import React, { useState } from "react";
+import NavBar from "./NavBar";
 
 const Header = (props) => {
-  const [current, setCurrent] = useState("home");
   let name;
   let social;
   let networks;
   let description;
-
-  const navItems = [
-    { id: "home", label: "Home" },
-    { id: "about", label: "About" },
-    { id: "resume", label: "Resume" },
-    { id: "portfolio", label: "Projects" },
-  ];
-
-  const handleClick = (id) => {
-    setCurrent(id);
-  };
 
   if (props.data) {
     ({ name, description, social } = props.data);
@@ -33,27 +22,7 @@ const Header = (props) => {
 
   return (
     <header id="home">
-      <nav id="nav-wrap">
-        <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
-          Show navigation
-        </a>
-        <a className="mobile-btn" href="#home" title="Hide navigation">
-          Hide navigation
-        </a>
-        <ul id="nav" className="nav">
-          {navItems.map((item) => (
-            <li key={item.id} className={current === item.id ? "current" : ""}>
-              <a
-                className="smoothscroll"
-                href={`#${item.id}`}
-                onClick={() => handleClick(item.id)}
-              >
-                {item.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <NavBar />
       <div className="row banner">
         <div className="banner-text">
           <h1 className="responsive-headline">{name}</h1>
