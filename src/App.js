@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ResumeProvider, ResumeContext } from "./ResumeContext";
+import { ResumeProvider, ResumeContext } from "./Components/ResumeContext";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import About from "./Components/About";
