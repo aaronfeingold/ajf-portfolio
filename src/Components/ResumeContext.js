@@ -5,8 +5,14 @@ export const ResumeContext = createContext();
 const defaultResumeData = {
   main: {
     name: "Default Profile",
+    social: [
+      {
+        name: "antisocial",
+        url: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/418",
+        classname: "fa-folder-open",
+      },
+    ],
   },
-  resume: {},
   resume: {
     education: [],
     work: [],
