@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const navItems = [
   { id: "home", label: "Home" },
@@ -7,7 +7,7 @@ const navItems = [
   { id: "portfolio", label: "Projects" },
 ];
 
-const NavBar = (props) => {
+const NavBar = () => {
   const [current, setCurrent] = useState("home");
 
   const handleClick = (id) => {
