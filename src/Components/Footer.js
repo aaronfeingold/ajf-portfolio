@@ -1,19 +1,15 @@
 import React from 'react';
 
-const Footer = (props) => {
-  let { social } = props.data ? props.data : "";
-  let networks;
-  if (props.data) {
-    networks = social.map(function (network) {
-      return (
-        <li key={network.name}>
-          <a href={network.url}>
-            <i className={network.className}></i>
-          </a>
-        </li>
-      );
-    });
-  }
+const Footer = ({ data }) => {
+  let { social = [] } = data || {};
+
+  const networks = social.map((network) => (
+    <li key={network.name}>
+      <a href={network.url} target="_blank" rel="noopener noreferrer">
+        <i className={network.className}></i>
+      </a>
+    </li>
+  ));
 
   return (
     <footer>
