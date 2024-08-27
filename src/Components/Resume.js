@@ -1,48 +1,50 @@
 import React from "react";
 
-const Resume = (props) => {
-  let skillmessage;
-  let education;
-  let work;
-  let skills;
+const Resume = ({ data }) => {
+  const skillsMessage =
+    data.skillsMessage ||
+    "'I don't even have any good skills. You know, like nunchuck skills, bow hunting skills, computer hacking skills. [Employers] only want [employees] who have great skills!' \n - Napoleon Dynamite";
 
-  if (props.data) {
-    skillmessage = props.data.skillmessage;
-    education = props.data.education.map(function (education) {
-      return (
-        <div key={education.school}>
-          <h3>{education.school}</h3>
+  const [message, quoteAuthor] = skillsMessage.split("\n");
+
+  const educationList = Array.isArray(data.education)
+    ? data.education.map((edu) => (
+        <div key={edu.school}>
+          <h3>{edu.school}</h3>
           <p className="info">
-            {education.degree} <span>&bull;</span>
-            <em className="date">{education.graduated}</em>
+            {edu.degree} <span>&bull;</span>
+            <em className="date">{edu.graduated}</em>
           </p>
         </div>
-      );
-    });
-    work = props.data.work.map(function (work) {
-      return (
-        <div key={work.company}>
-          <h3>{work.company}</h3>
+      ))
+    : [];
+
+  const workList = Array.isArray(data.work)
+    ? data.work.map((job) => (
+        <div key={job.company}>
+          <h3>{job.company}</h3>
           <p className="info">
-            {work.title}
-            <span>&bull;</span> <em className="date">{work.years}</em>
-            <span>&bull;</span> <em className="date">{work.location}</em>
+            {job.title}
+            <span>&bull;</span> <em className="date">{job.years}</em>
+            <span>&bull;</span> <em className="date">{job.location}</em>
           </p>
-          <p>{work.description}</p>
+          <p>{job.description}</p>
         </div>
-      );
-    });
-    skills = props.data.skills.map(function (skill) {
-      const className = `bar-expand ${skill.name.toLowerCase()}`;
-      return (
-        <li key={skill.name}>
-          <span style={{ width: skill.level }} className={className}></span>
-          <i className="fa fa-linkedin"></i>
-          <em>{skill.desc}</em>
-        </li>
-      );
-    });
-  }
+      ))
+    : [];
+
+  const skillsList = Array.isArray(data.skills)
+    ? data.skills.map((skill) => {
+        const className = `bar-expand ${skill.name.toLowerCase()}`;
+        return (
+          <li key={skill.name}>
+            <span style={{ width: skill.level }} className={className}></span>
+            <i className="fa fa-linkedin"></i>
+            <em>{skill.desc}</em>
+          </li>
+        );
+      })
+    : [];
 
   return (
     <section id="resume">
@@ -55,7 +57,7 @@ const Resume = (props) => {
 
         <div className="nine columns main-col">
           <div className="row item">
-            <div className="twelve columns">{education}</div>
+            <div className="twelve columns">{educationList}</div>
           </div>
         </div>
       </div>
@@ -66,7 +68,7 @@ const Resume = (props) => {
           </h1>
         </div>
 
-        <div className="nine columns main-col">{work}</div>
+        <div className="nine columns main-col">{workList}</div>
       </div>
       <div className="row skill">
         <div className="three columns header-col">
@@ -75,9 +77,10 @@ const Resume = (props) => {
           </h1>
         </div>
         <div className="nine columns main-col">
-          <p>{skillmessage}</p>
+          <p>{message}</p>
+          <p>{quoteAuthor}</p>
           <div className="bars">
-            <ul className="skills">{skills}</ul>
+            <ul className="skills">{skillsList}</ul>
           </div>
         </div>
       </div>
