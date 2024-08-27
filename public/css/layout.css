@@ -316,28 +316,30 @@ ul#nav li.current a { color: #F06000; }
    position: absolute;
    left: 0;
    top: 0;
-
    margin: 0;
    padding-right: 24px;
-  	background: #313131;
+   background: #313131;
    display: inline-block;
-  	height: 42px;
+   height: 42px;
    line-height: 42px;
    border-radius: 3px 0 0 3px;
 }
 
+.javascript {
+     -moz-animation: javascript 2s ease;
+     -webkit-animation: javascript 2s ease;
+}
 .reactjs {
      -moz-animation: reactjs 2s ease;
      -webkit-animation: reactjs 2s ease;
 }
-/*
 .git {
   	-moz-animation: git 2s ease;
   	-webkit-animation: git 2s ease;
 }
-.illustrator {
-  	-moz-animation: illustrator 2s ease;
-  	-webkit-animation: illustrator 2s ease;
+.nodejs {
+  	-moz-animation: nodejs 2s ease;
+  	-webkit-animation: nodejs 2s ease;
 }
 .css {
   	-moz-animation: css 2s ease;
@@ -347,26 +349,58 @@ ul#nav li.current a { color: #F06000; }
   	-moz-animation: html5 2s ease;
   	-webkit-animation: html5 2s ease;
 }
-.vuejs {
-  	-moz-animation: vuejs 2s ease;
-  	-webkit-animation: vuejs 2s ease;
-}
 .mongodb {
   	-moz-animation: mongodb 2s ease;
   	-webkit-animation: mongodb 2s ease;
 }
+.linux {
+  	-moz-animation: linux 2s ease;
+  	-webkit-animation: linux 2s ease;
+}
+.python {
+  	-moz-animation: python 2s ease;
+  	-webkit-animation: python 2s ease;
+}
+.bash {
+  	-moz-animation: bash 2s ease;
+  	-webkit-animation: bash 2s ease;
+}
+.packer {
+  	-moz-animation: packer 2s ease;
+  	-webkit-animation: packer 2s ease;
+}
 
+@-moz-keyframes reactjs {
+    0%   { width: 0px;  }
+    100% { width: 50%;  }
+}
+@-moz-keyframes javascript {
+    0%   { width: 0px;  }
+    100% { width: 50%;  }
+}
 @-moz-keyframes git {
   0%   { width: 0px;  }
   100% { width: 60%;  }
 }
-@-moz-keyframes illustrator {
+@-moz-keyframes nodejs {
   0%   { width: 0px;  }
-  100% { width: 55%;  }
+  100% { width: 60%;  }
 }
-@-moz-keyframes reactjs {
+@-moz-keyframes linux {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 60%;  }
+}
+@-moz-keyframes python {
+  0%   { width: 0px;  }
+  100% { width: 60%;  }
+}
+@-moz-keyframes bash {
+  0%   { width: 0px;  }
+  100% { width: 60%;  }
+}
+@-moz-keyframes packer {
+  0%   { width: 0px;  }
+  100% { width: 60%;  }
 }
 @-moz-keyframes css {
   0%   { width: 0px;  }
@@ -376,26 +410,43 @@ ul#nav li.current a { color: #F06000; }
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
-@-moz-keyframes vuejs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
 @-moz-keyframes mongodb {
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
 
-@-webkit-keyframes photoshop {
+
+@-webkit-keyframes reactjs {
+    0%   { width: 0px;  }
+    100% { width: 50%;  }
+}
+@-webkit-keyframes javascript {
+    0%   { width: 0px;  }
+    100% { width: 50%;  }
+}
+@-webkit-keyframes git {
   0%   { width: 0px;  }
   100% { width: 60%;  }
 }
-@-webkit-keyframes illustrator {
+@-webkit-keyframes nodejs {
   0%   { width: 0px;  }
-  100% { width: 55%;  }
+  100% { width: 60%;  }
 }
-@-webkit-keyframes reactjs {
+@-webkit-keyframes linux {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 60%;  }
+}
+@-webkit-keyframes python {
+  0%   { width: 0px;  }
+  100% { width: 60%;  }
+}
+@-webkit-keyframes bash {
+  0%   { width: 0px;  }
+  100% { width: 60%;  }
+}
+@-webkit-keyframes packer {
+  0%   { width: 0px;  }
+  100% { width: 60%;  }
 }
 @-webkit-keyframes css {
   0%   { width: 0px;  }
@@ -405,14 +456,10 @@ ul#nav li.current a { color: #F06000; }
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
-@-webkit-keyframes vuejs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
 @-webkit-keyframes mongodb {
   0%   { width: 0px;  }
   100% { width: 80%;  }
-}  */
+}
 
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section

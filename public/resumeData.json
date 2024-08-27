@@ -97,7 +97,7 @@
         "level": "90%"
       },
       {
-        "name": "mongo",
+        "name": "mongodb",
         "desc": "MongoDB/Atlas",
         "level": "80%"
       },
