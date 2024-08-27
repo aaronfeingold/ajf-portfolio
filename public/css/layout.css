@@ -286,6 +286,10 @@ ul#nav li.current a { color: #F06000; }
 /*	Skill Bars
 /*----------------------------------------------*/
 
+.animate {
+    animation-play-state: running;
+}
+
 .bars {
 	width: 95%;
 	float: left;
@@ -370,37 +374,41 @@ ul#nav li.current a { color: #F06000; }
   	-webkit-animation: packer 2s ease;
 }
 
-@-moz-keyframes reactjs {
-    0%   { width: 0px;  }
-    100% { width: 50%;  }
-}
 @-moz-keyframes javascript {
     0%   { width: 0px;  }
-    100% { width: 50%;  }
+    100% { width: 100%;  }
 }
 @-moz-keyframes git {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
+    0%   { width: 0px;  }
+    100% { width: 100%;  }
+}
+@-moz-keyframes reactjs {
+    0%   { width: 0px;  }
+    100% { width: 90%;  }
 }
 @-moz-keyframes nodejs {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 90%;  }
+}
+@-moz-keyframes mongodb {
+    0%   { width: 0px;  }
+    100% { width: 80%;  }
 }
 @-moz-keyframes linux {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 80%;  }
 }
 @-moz-keyframes python {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 80%;  }
 }
 @-moz-keyframes bash {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 75%;  }
 }
 @-moz-keyframes packer {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 50%;  }
 }
 @-moz-keyframes css {
   0%   { width: 0px;  }
@@ -410,43 +418,44 @@ ul#nav li.current a { color: #F06000; }
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
-@-moz-keyframes mongodb {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
 
 
-@-webkit-keyframes reactjs {
-    0%   { width: 0px;  }
-    100% { width: 50%;  }
-}
+
 @-webkit-keyframes javascript {
     0%   { width: 0px;  }
-    100% { width: 50%;  }
+    100% { width: 100%;  }
 }
 @-webkit-keyframes git {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
+    0%   { width: 0px;  }
+    100% { width: 100%;  }
+}
+@-webkit-keyframes reactjs {
+    0%   { width: 0px;  }
+    100% { width: 90%;  }
 }
 @-webkit-keyframes nodejs {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 90%;  }
+}
+@-webkit-keyframes mongodb {
+    0%   { width: 0px;  }
+    100% { width: 80%;  }
 }
 @-webkit-keyframes linux {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 80%;  }
 }
 @-webkit-keyframes python {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 80%;  }
 }
 @-webkit-keyframes bash {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 75%;  }
 }
 @-webkit-keyframes packer {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 50%;  }
 }
 @-webkit-keyframes css {
   0%   { width: 0px;  }
@@ -456,10 +465,7 @@ ul#nav li.current a { color: #F06000; }
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
-@-webkit-keyframes mongodb {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
+
 
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
