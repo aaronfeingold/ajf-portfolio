@@ -9,6 +9,8 @@
 * Date: Thu May 05 14:23:00 2011 -0600
 */
 
+/* according to Dave Rupert, this is now something you can do in CSS https://daverupert.com/projects/fittext/ */
+
 (function( $ ){
 
   $.fn.fitText = function( kompressor, options ) {
