@@ -17,9 +17,9 @@ const Footer = ({ data }) => {
         <div className="twelve columns">
           <ul className="social-links">{networks}</ul>
           <ul className="copyright">
-            <li>&copy; Copyright 2021 Aaron Feingold</li>
+            <li>&copy; Copyright 2024 Aaron Feingold</li>
             <li>
-              Design by{" "}
+              Additional Designs by{" "}
               <a title="Styleshout" href="http://www.styleshout.com/">
                 Styleshout
               </a>
