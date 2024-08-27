@@ -177,6 +177,21 @@ h5 { font-size: 18px; line-height: 30px; }
 h6 { font-size: 14px; line-height: 30px; }
 .subheader { }
 
+/* Use this instead of the jqery plugin called fittext */
+/* initial response headline */
+h1.responsive-headline {
+    /* Initial styles before the class is added */
+    font-size: 1rem; /* Fallback font size before applying responsive styles */
+}
+/* response headline after mount */
+
+h1.responsive-headline.responsive {
+    --min-font-size: 40px; /* Adjust based on your design */
+    --max-font-size: 90px; /* Adjust based on your design */
+    --ratio: 5vw; /* Adjust to fit your needs, using vw to scale based on viewport width */
+    font-size: clamp(var(--min-font-size), var(--ratio), var(--max-font-size));
+  }
+
 p { margin: 0 0 30px 0; }
 p img { margin: 0; }
 p.lead {
