@@ -1,8 +1,6 @@
 /*
 =====================================================================
-*   Ceevee v1.0 Layout Stylesheet
-*   url: styleshout.com
-*   03-18-2014
+   Stylesheet for "Personal" - Personal Portfolio Template
 =====================================================================
 
    TOC:
@@ -207,7 +205,7 @@ ul#nav li.current a { color: #F06000; }
 }
 #about .profile-pic {
    position: relative;
-   width: 250px;
+   width: 275px;
    height: 275px;
    border-radius: 100%;
 }
@@ -288,6 +286,10 @@ ul#nav li.current a { color: #F06000; }
 /*	Skill Bars
 /*----------------------------------------------*/
 
+.animate {
+    animation-play-state: running;
+}
+
 .bars {
 	width: 95%;
 	float: left;
@@ -318,28 +320,30 @@ ul#nav li.current a { color: #F06000; }
    position: absolute;
    left: 0;
    top: 0;
-
    margin: 0;
    padding-right: 24px;
-  	background: #313131;
+   background: #313131;
    display: inline-block;
-  	height: 42px;
+   height: 42px;
    line-height: 42px;
    border-radius: 3px 0 0 3px;
 }
 
+.javascript {
+     -moz-animation: javascript 2s ease;
+     -webkit-animation: javascript 2s ease;
+}
 .reactjs {
      -moz-animation: reactjs 2s ease;
      -webkit-animation: reactjs 2s ease;
 }
-/*
 .git {
   	-moz-animation: git 2s ease;
   	-webkit-animation: git 2s ease;
 }
-.illustrator {
-  	-moz-animation: illustrator 2s ease;
-  	-webkit-animation: illustrator 2s ease;
+.nodejs {
+  	-moz-animation: nodejs 2s ease;
+  	-webkit-animation: nodejs 2s ease;
 }
 .css {
   	-moz-animation: css 2s ease;
@@ -349,24 +353,60 @@ ul#nav li.current a { color: #F06000; }
   	-moz-animation: html5 2s ease;
   	-webkit-animation: html5 2s ease;
 }
-.vuejs {
-  	-moz-animation: vuejs 2s ease;
-  	-webkit-animation: vuejs 2s ease;
-}
 .mongodb {
   	-moz-animation: mongodb 2s ease;
   	-webkit-animation: mongodb 2s ease;
 }
-
-@-moz-keyframes git {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
+.linux {
+  	-moz-animation: linux 2s ease;
+  	-webkit-animation: linux 2s ease;
 }
-@-moz-keyframes illustrator {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
+.python {
+  	-moz-animation: python 2s ease;
+  	-webkit-animation: python 2s ease;
+}
+.bash {
+  	-moz-animation: bash 2s ease;
+  	-webkit-animation: bash 2s ease;
+}
+.packer {
+  	-moz-animation: packer 2s ease;
+  	-webkit-animation: packer 2s ease;
+}
+
+@-moz-keyframes javascript {
+    0%   { width: 0px;  }
+    100% { width: 100%;  }
+}
+@-moz-keyframes git {
+    0%   { width: 0px;  }
+    100% { width: 100%;  }
 }
 @-moz-keyframes reactjs {
+    0%   { width: 0px;  }
+    100% { width: 90%;  }
+}
+@-moz-keyframes nodejs {
+  0%   { width: 0px;  }
+  100% { width: 90%;  }
+}
+@-moz-keyframes mongodb {
+    0%   { width: 0px;  }
+    100% { width: 80%;  }
+}
+@-moz-keyframes linux {
+  0%   { width: 0px;  }
+  100% { width: 80%;  }
+}
+@-moz-keyframes python {
+  0%   { width: 0px;  }
+  100% { width: 80%;  }
+}
+@-moz-keyframes bash {
+  0%   { width: 0px;  }
+  100% { width: 75%;  }
+}
+@-moz-keyframes packer {
   0%   { width: 0px;  }
   100% { width: 50%;  }
 }
@@ -378,24 +418,42 @@ ul#nav li.current a { color: #F06000; }
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
-@-moz-keyframes vuejs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
+
+
+
+@-webkit-keyframes javascript {
+    0%   { width: 0px;  }
+    100% { width: 100%;  }
 }
-@-moz-keyframes mongodb {
+@-webkit-keyframes git {
+    0%   { width: 0px;  }
+    100% { width: 100%;  }
+}
+@-webkit-keyframes reactjs {
+    0%   { width: 0px;  }
+    100% { width: 90%;  }
+}
+@-webkit-keyframes nodejs {
+  0%   { width: 0px;  }
+  100% { width: 90%;  }
+}
+@-webkit-keyframes mongodb {
+    0%   { width: 0px;  }
+    100% { width: 80%;  }
+}
+@-webkit-keyframes linux {
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
-
-@-webkit-keyframes photoshop {
+@-webkit-keyframes python {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 80%;  }
 }
-@-webkit-keyframes illustrator {
+@-webkit-keyframes bash {
   0%   { width: 0px;  }
-  100% { width: 55%;  }
+  100% { width: 75%;  }
 }
-@-webkit-keyframes reactjs {
+@-webkit-keyframes packer {
   0%   { width: 0px;  }
   100% { width: 50%;  }
 }
@@ -407,14 +465,7 @@ ul#nav li.current a { color: #F06000; }
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
-@-webkit-keyframes vuejs {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-webkit-keyframes mongodb {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}  */
+
 
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section

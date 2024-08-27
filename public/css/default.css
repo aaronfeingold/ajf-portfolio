@@ -1,10 +1,5 @@
 /*
 =====================================================================
-*   Ceevee v1.0 Default Stylesheet
-*   url: styleshout.com
-*   03-17-2014
-=====================================================================
-
 TOC:
 a. Webfonts and Icon fonts
 b. Reset
@@ -153,6 +148,17 @@ body {
 	-webkit-text-size-adjust: 100%;
 }
 
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+    z-index: 1000;
+  }
+
 /*  2. Typography
        Vertical rhythm with leading derived from 6
 --------------------------------------------------------------------- */
@@ -170,6 +176,21 @@ h4 { font-size: 20px; line-height: 30px; margin-bottom: 6px; }
 h5 { font-size: 18px; line-height: 30px; }
 h6 { font-size: 14px; line-height: 30px; }
 .subheader { }
+
+/* Use this instead of the jqery plugin called fittext */
+/* initial response headline */
+h1.responsive-headline {
+    /* Initial styles before the class is added */
+    font-size: 1rem; /* Fallback font size before applying responsive styles */
+}
+/* response headline after mount */
+
+h1.responsive-headline.responsive {
+    --min-font-size: 40px; /* Adjust based on your design */
+    --max-font-size: 90px; /* Adjust based on your design */
+    --ratio: 5vw; /* Adjust to fit your needs, using vw to scale based on viewport width */
+    font-size: clamp(var(--min-font-size), var(--ratio), var(--max-font-size));
+  }
 
 p { margin: 0 0 30px 0; }
 p img { margin: 0; }
