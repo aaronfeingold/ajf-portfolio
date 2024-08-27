@@ -30,7 +30,7 @@
    });
 
    /*----------------------------------------------------*/
-   /* Highlight the current section in the navigation bar
+   /* Highlight the current section in the navigation bar when scrolling
 ------------------------------------------------------*/
 
    var sections = $("section");
@@ -50,7 +50,7 @@
        navigation_links.parent().removeClass("current");
        active_link.parent().addClass("current");
      },
-     offset: "35%",
+     offset: "25%",
    });
 
    /*----------------------------------------------------*/
