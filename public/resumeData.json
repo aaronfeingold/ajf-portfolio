@@ -64,17 +64,17 @@
         "title": "Database Engineer",
         "location": "New Orleans, LA",
         "years": "April 2021 - June 2021",
-        "description": "Python mapper for MYSQL to aggregate data pipelines for state reporting"
+        "description": "Built a Python mapper from scratch for MYSQL to aggregate data pipelines for state reporting"
       },
       {
         "company": "Republic National Distributing Company",
         "title": "On-Premise Sales Representative",
         "location": "New Orleans, LA",
         "years": "April 2015 - May 2020",
-        "description": "Selling wine full time."
+        "description": "Selling wine full time. One of the greatest jobs you could ever have."
       }
     ],
-    "skillmessage": "Here's the percent likeliness of various tech stuff to be used on any given day: ",
+    "skillsMessage": "'I don't even have any good skills. You know, like nunchuck skills, bow hunting skills, computer hacking skills. [Employers] only want [employees] who have great skills!' \n - Napoleon Dynamite",
     "skills": [
       {
         "name": "javascript",
