@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useMemo } from "react";
+import { useInView } from "react-intersection-observer";
 
 const Resume = ({ data }) => {
+  const [ref, inView] = useInView({
+    threshold: 0.1, // Trigger animation when 10% of the bars section is visible
+    triggerOnce: true, // Animation will only run once
+  });
+
   const skillsMessage =
     data.skillsMessage ||
     "'I don't even have any good skills. You know, like nunchuck skills, bow hunting skills, computer hacking skills. [Employers] only want [employees] who have great skills!' \n - Napoleon Dynamite";
@@ -21,7 +27,7 @@ const Resume = ({ data }) => {
 
   const workList = Array.isArray(data.work)
     ? data.work.map((job) => (
-        <div key={job.company}>
+        <div key={`${job.company}-${job.title}`}>
           <h3>{job.company}</h3>
           <p className="info">
             {job.title}
@@ -33,18 +39,26 @@ const Resume = ({ data }) => {
       ))
     : [];
 
-  const skillsList = Array.isArray(data.skills)
-    ? data.skills.map((skill) => {
-        const className = `bar-expand ${skill.name.toLowerCase()}`;
-        return (
-          <li key={skill.name}>
-            <span style={{ width: skill.level }} className={className}></span>
-            <i className="fa fa-linkedin"></i>
-            <em>{skill.desc}</em>
-          </li>
-        );
-      })
-    : [];
+  const skillsList = useMemo(
+    () =>
+      Array.isArray(data.skills)
+        ? data.skills.map((skill) => {
+            const className = `bar-expand ${skill.name.toLowerCase()} ${
+              inView ? "animate" : ""
+            }`;
+            return (
+              <li key={skill.name}>
+                <span
+                  style={{ width: skill.level }}
+                  className={className}
+                ></span>
+                <em>{skill.desc}</em>
+              </li>
+            );
+          })
+        : [],
+    [inView, data.skills]
+  );
 
   return (
     <section id="resume">
@@ -79,7 +93,7 @@ const Resume = ({ data }) => {
         <div className="nine columns main-col">
           <p>{message}</p>
           <p>{quoteAuthor}</p>
-          <div className="bars">
+          <div className="bars" ref={ref}>
             <ul className="skills">{skillsList}</ul>
           </div>
         </div>
