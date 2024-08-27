@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavBar from "./NavBar";
 
 const Header = ({ data }) => {
@@ -17,6 +17,18 @@ const Header = ({ data }) => {
         </li>
       ))
     : null;
+
+  // useEffect to add class after a delay
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const headline = document.querySelector(".responsive-headline");
+      if (headline) {
+        headline.classList.add("responsive");
+      }
+    }, 100);
+    // Clean up the timer on component unmount
+    return () => clearTimeout(timer);
+  }, []); // Empty dependency array means this effect runs once on mount
 
   return (
     <header id="home">
