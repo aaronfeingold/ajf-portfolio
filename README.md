@@ -17,6 +17,8 @@ The project follows a typical React application structure:
   - **assets/**: Images and other static assets.
 - **App.js**: The main application component.
 - **index.js**: The entry point of the application.
+- **public**: index.html, data, CSS (font-awsome, defaults, layout), images, and jQuery
+
 
 ### Dependencies
 
