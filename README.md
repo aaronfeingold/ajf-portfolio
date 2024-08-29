@@ -87,7 +87,3 @@ The project is deployed via Netlify. To deploy the project, follow these steps:
    Follow the prompts to link the project to your Netlify account and deploy the site.
 
 A deployed version can be found at [https://aaronfeingold-portfolio.netlify.app](https://aaronfeingold-portfolio.netlify.app).
-
-## Conclusion
-
-This README provides an overview of the project, including its structure, dependencies, and instructions for installation, running, and deployment. For more detailed information, please refer to the source code and comments within the project files.
