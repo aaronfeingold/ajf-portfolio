@@ -15,10 +15,14 @@ The project follows a typical React application structure:
   - **pages/**: Different pages of the website.
   - **styles/**: CSS files for styling the components.
   - **assets/**: Images and other static assets.
-- **App.js**: The main application component.
-- **index.js**: The entry point of the application.
-- **public/**: index.html, data, CSS (font-awsome, defaults, layout), images, and jQuery
-
+  - **App.js**: The main application component.
+  - **index.js**: The entry point of the application.
+- **public/**:
+  - css/
+  - images/
+  - jQuery/
+  - index.html
+  - resumeData.json
 
 ### Dependencies
 
@@ -55,6 +59,7 @@ To get started with the project, follow these steps:
    ```
    npm install
    ```
+3. **Fill in the resumeData.json with your own info**
 
 **NOTE**
 - This project uses Node v16
