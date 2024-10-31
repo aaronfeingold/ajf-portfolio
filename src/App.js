@@ -7,16 +7,19 @@ import Resume from "./Components/Resume";
 import Portfolio from "./Components/Portfolio";
 
 const App = () => {
-  const { resumeData, loading } = useContext(ResumeContext);
+  const {
+    resumeData: { main, resume, portfolio },
+    loading,
+  } = useContext(ResumeContext);
 
   return (
     <div className="App">
       {loading && <div className="loading-overlay">Loading...</div>}
-      <Header data={resumeData.main} />
-      <About data={resumeData.main} />
-      <Resume data={resumeData.resume} />
-      <Portfolio data={resumeData.portfolio} />
-      <Footer data={resumeData.main} />
+      <Header data={main} />
+      <About data={main} />
+      <Resume data={resume} />
+      <Portfolio data={portfolio} />
+      <Footer data={main} />
     </div>
   );
 };
