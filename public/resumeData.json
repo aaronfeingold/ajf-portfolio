@@ -126,22 +126,16 @@
   "portfolio": {
     "projects": [
       {
+        "title": "AJF Live-re-Wire Community Calendar",
+        "category": "Connect with artists and events in the New Orleans area",
+        "image": "AJF_Life-re-Wire.jpg",
+        "url": "https://ajf-live-re-wire.netlify.app/"
+      },
+      {
         "title": "Professional Portfolio",
         "category": "Tired of social media, but need something to show off? Use this to create a professional portfolio",
         "image": "jessfeingolddotcom.jpg",
         "url": "https://jessfeingold.com"
-      },
-      {
-        "title": "Prepped Nola",
-        "category": "Kitchen Fatigue? Use this app to build weekly meal plans, and save time and engergy",
-        "image": "prepped-nola-screenshot.jpg",
-        "url": "https://meals-prepped-nola.netlify.app"
-      },
-      {
-        "title": "My_Winery",
-        "category": "Too many barrels in the cellar? Use this to decide what needs to get bottled asap",
-        "image": "my-winery-screenshot.jpg",
-        "url": "https://my-winery-1.herokuapp.com/"
       }
     ]
   }
