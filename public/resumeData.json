@@ -127,8 +127,8 @@
     "projects": [
       {
         "title": "AJF Live-re-Wire Community Calendar",
-        "category": "Connect with artists and events in the New Orleans area",
-        "image": "AJF_Life-re-Wire.jpg",
+        "category": "Connect with artists and venues in the New Orleans area",
+        "image": "AJF_Live-re-Wire.jpg",
         "url": "https://ajf-live-re-wire.netlify.app/"
       },
       {
