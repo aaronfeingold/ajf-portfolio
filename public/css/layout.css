@@ -31,7 +31,7 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/header-background.jpg) no-repeat top center;
+   background: #161415 url(../images/header-background-3.jpg) no-repeat top center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
@@ -207,7 +207,13 @@ ul#nav li.current a { color: #F06000; }
    position: relative;
    width: 275px;
    height: 275px;
-   border-radius: 100%;
+   border-top-left-radius: 70%;
+   border-bottom-left-radius: 55%;
+   border-bottom-right-radius: 70%;
+   transform: rotate(-45deg);
+   border: 1px solid rgb(11, 151, 245);
+   background-color: rgba(0, 255, 255, 0.363);
+   box-shadow: rgb(55, 78, 102) 0px 15px 25px -10px;
 }
 #about .contact-details { width: 41.66667%; }
 #about .download {
