@@ -1,6 +1,6 @@
 /*
 =====================================================================
-   Stylesheet for "Personal" - Personal Portfolio Template
+    Personal Portfolio Template
 =====================================================================
 
    TOC:
@@ -167,7 +167,6 @@ ul#nav li a {
    line-height: 32px;
 	text-decoration: none;
    text-align: left;
-   color: rgb(0, 0, 0);
 
 	-webkit-transition: color .2s ease-in-out;
 	-moz-transition: color .2s ease-in-out;
