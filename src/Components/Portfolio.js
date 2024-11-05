@@ -3,7 +3,7 @@ import React from 'react';
 const Portfolio = ({ data }) => {
   const projects = Array.isArray(data.projects)
     ? data.projects.map((proj) => {
-        let projectImage = `images/portfolio/${proj.image}`;
+        let projectImage = `/images/portfolio/${proj.image}`;
 
         return (
           <div key={proj.title} className="columns portfolio-item">
