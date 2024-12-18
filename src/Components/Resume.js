@@ -62,16 +62,17 @@ const Resume = ({ data }) => {
 
   return (
     <section id="resume">
-      <div className="row education">
+      <div className="row skill">
         <div className="three columns header-col">
           <h1>
-            <span>Education</span>
+            <span>Skills</span>
           </h1>
         </div>
-
         <div className="nine columns main-col">
-          <div className="row item">
-            <div className="twelve columns">{educationList}</div>
+          <p>{message}</p>
+          <p>{quoteAuthor}</p>
+          <div className="bars" ref={ref}>
+            <ul className="skills">{skillsList}</ul>
           </div>
         </div>
       </div>
@@ -84,17 +85,16 @@ const Resume = ({ data }) => {
 
         <div className="nine columns main-col">{workList}</div>
       </div>
-      <div className="row skill">
+      <div className="row education">
         <div className="three columns header-col">
           <h1>
-            <span>Skills</span>
+            <span>Education</span>
           </h1>
         </div>
+
         <div className="nine columns main-col">
-          <p>{message}</p>
-          <p>{quoteAuthor}</p>
-          <div className="bars" ref={ref}>
-            <ul className="skills">{skillsList}</ul>
+          <div className="row item">
+            <div className="twelve columns">{educationList}</div>
           </div>
         </div>
       </div>
