@@ -50,7 +50,7 @@ header .banner {
    vertical-align: middle;
    margin: 0 auto;
    width: 85%;
-   padding-bottom: 30px;
+   padding-bottom: 300px;
    text-align: center;
 }
 
@@ -79,7 +79,9 @@ header .banner-text hr {
    border-color: #2F2D2E;
    border-color: rgba(150, 150, 150, .1);
 }
-
+header .banner-text h2 {
+    color: #11ABB0;
+  }
 /* header social links */
 header .social {
    margin: 24px 0;

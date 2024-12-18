@@ -27,7 +27,10 @@
 
     /* header styles
    ------------------------------------------------------------------ */
-   header .banner { padding-bottom: 12px; }
+   header .banner {
+    padding-bottom: 12px;
+    vertical-align: unset;
+}
    header .banner-text h1 {
       font: 78px/1.1em 'opensans-bold', sans-serif;
       letter-spacing: -1px;
