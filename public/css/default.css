@@ -192,6 +192,10 @@ h1.responsive-headline.responsive {
     font-size: clamp(var(--min-font-size), var(--ratio), var(--max-font-size));
   }
 
+h2.header-description {
+  color: #11ABB0;
+}
+
 p { margin: 0 0 30px 0; }
 p img { margin: 0; }
 p.lead {
