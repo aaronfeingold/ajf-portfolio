@@ -1,11 +1,22 @@
-import React, { useMemo, useEffect } from "react";
+import React, { useMemo, useEffect, useRef, useCallback } from "react";
 import { useInView } from "react-intersection-observer";
 
 const Resume = ({ data }) => {
-  const [ref, inView] = useInView({
-    threshold: 0.1, // Trigger animation when 10% of the bars section is visible
+  const ref = useRef();
+  const { ref: inViewRef, inView } = useInView({
+    threshold: 0.2, // Trigger animation when 10% of the bars section is visible
     triggerOnce: true, // Animation will only run once
   });
+
+  const setRefs = useCallback(
+    (node) => {
+      // Ref's from useRef needs to have the node assigned to `current`
+      ref.current = node;
+      // Callback refs, like the one from `useInView`, is a function that takes the node as an argument
+      inViewRef(node);
+    },
+    [inViewRef]
+  );
 
   const skillsMessage =
     data.skillsMessage || "Loose Yourself to Dance \n - Pharrell Williams";
@@ -38,17 +49,33 @@ const Resume = ({ data }) => {
       ))
     : [];
 
+  const addSkillAnimation = (skillName, skillLevel) => {
+    const keyframes = `
+            @keyframes ${skillName} {
+            0% { width: 0; }
+            100% { width: ${skillLevel}; }
+            }
+        `;
+    const styleSheet = Array.from(document.styleSheets).find(
+      (sheet) => sheet.href && sheet.href.includes("layout.css")
+    );
+    styleSheet.insertRule(keyframes, styleSheet.cssRules.length);
+  };
+
   const skillsList = useMemo(
     () =>
       Array.isArray(data.skills)
         ? data.skills.map((skill) => {
-            const className = `bar-expand ${skill.name.toLowerCase()}`;
-            console.log(`className: ${className}`);
+            const animationName = `${skill.name.toLowerCase()}-bar`;
+            addSkillAnimation(animationName, skill.level);
             return (
               <li key={skill.name}>
                 <span
-                  style={{ width: skill.level }}
-                  className={className}
+                  style={{
+                    width: skill.level,
+                    animationName,
+                  }}
+                  className="bar-expand"
                 ></span>
                 <em>{skill.desc}</em>
               </li>
@@ -59,9 +86,7 @@ const Resume = ({ data }) => {
   );
 
   useEffect(() => {
-    console.log("inView:", inView);
-    console.log("ref:", ref.current);
-    if (inView && ref.current) {
+    if (inView && ref?.current) {
       const items = ref.current.querySelectorAll("li span");
       items.forEach((span) => {
         span.classList.add("animate");
@@ -71,28 +96,27 @@ const Resume = ({ data }) => {
 
   return (
     <section id="resume">
-      <div className="row skill">
-        <div className="three columns header-col">
-          <h1>
-            <span>Skills</span>
-          </h1>
-        </div>
-        <div className="nine columns main-col">
-          <p>{message}</p>
-          <p>{quoteAuthor}</p>
-          <div className="bars" ref={ref}>
-            <ul className="skills">{skillsList}</ul>
-          </div>
-        </div>
-      </div>
       <div className="row work">
         <div className="three columns header-col">
           <h1>
             <span>Work</span>
           </h1>
         </div>
-
         <div className="nine columns main-col">{workList}</div>
+      </div>
+      <div className="row skill">
+        <div className="three columns header-col">
+          <h1>
+            <span>Skills</span>
+          </h1>
+        </div>
+        <div className="nine columns main-col" ref={setRefs}>
+          <p>{message}</p>
+          <p>{quoteAuthor}</p>
+          <div className="bars">
+            <ul className="skills">{skillsList}</ul>
+          </div>
+        </div>
       </div>
       <div className="row education">
         <div className="three columns header-col">
