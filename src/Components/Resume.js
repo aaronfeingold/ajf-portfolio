@@ -6,7 +6,7 @@ const Resume = ({ data }) => {
     threshold: 0.1, // Trigger animation when 10% of the bars section is visible
     triggerOnce: true, // Animation will only run once
   });
-
+  console.log(`inView: ${inView}`);
   const skillsMessage =
     data.skillsMessage ||
     "'I don't even have any good skills. You know, like nunchuck skills, bow hunting skills, computer hacking skills. [Employers] only want [employees] who have great skills!' \n - Napoleon Dynamite";
@@ -46,6 +46,7 @@ const Resume = ({ data }) => {
             const className = `bar-expand ${skill.name.toLowerCase()} ${
               inView ? "animate" : ""
             }`;
+            console.log(`className: ${className}`);
             return (
               <li key={skill.name}>
                 <span
