@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
 const Resume = ({ data }) => {
@@ -6,10 +6,9 @@ const Resume = ({ data }) => {
     threshold: 0.1, // Trigger animation when 10% of the bars section is visible
     triggerOnce: true, // Animation will only run once
   });
-  console.log(`inView: ${inView}`);
+
   const skillsMessage =
-    data.skillsMessage ||
-    "'I don't even have any good skills. You know, like nunchuck skills, bow hunting skills, computer hacking skills. [Employers] only want [employees] who have great skills!' \n - Napoleon Dynamite";
+    data.skillsMessage || "Loose Yourself to Dance \n - Pharrell Williams";
 
   const [message, quoteAuthor] = skillsMessage.split("\n");
 
@@ -43,9 +42,7 @@ const Resume = ({ data }) => {
     () =>
       Array.isArray(data.skills)
         ? data.skills.map((skill) => {
-            const className = `bar-expand ${skill.name.toLowerCase()} ${
-              inView ? "animate" : ""
-            }`;
+            const className = `bar-expand ${skill.name.toLowerCase()}`;
             console.log(`className: ${className}`);
             return (
               <li key={skill.name}>
@@ -58,8 +55,19 @@ const Resume = ({ data }) => {
             );
           })
         : [],
-    [inView, data.skills]
+    [data.skills]
   );
+
+  useEffect(() => {
+    console.log("inView:", inView);
+    console.log("ref:", ref.current);
+    if (inView && ref.current) {
+      const items = ref.current.querySelectorAll("li span");
+      items.forEach((span) => {
+        span.classList.add("animate");
+      });
+    }
+  }, [ref, inView]);
 
   return (
     <section id="resume">
