@@ -376,48 +376,48 @@ ul#nav li.current a {
 }
 
 .javascript {
-  -moz-animation: javascript 2s ease;
-  -webkit-animation: javascript 2s ease;
+  -webkit-animation: javascript 2s ease paused;
+  -webkit-animation: javascript 2s ease paused;
 }
 .reactjs {
-  -moz-animation: reactjs 2s ease;
-  -webkit-animation: reactjs 2s ease;
+  -moz-animation: reactjs 2s ease paused;
+  -webkit-animation: reactjs 2s ease paused;
 }
 .git {
-  -moz-animation: git 2s ease;
-  -webkit-animation: git 2s ease;
+  -moz-animation: git 2s ease paused;
+  -webkit-animation: git 2s ease paused;
 }
 .nodejs {
-  -moz-animation: nodejs 2s ease;
-  -webkit-animation: nodejs 2s ease;
+  -moz-animation: nodejs 2s ease paused;
+  -webkit-animation: nodejs 2s ease paused;
 }
 .css {
-  -moz-animation: css 2s ease;
-  -webkit-animation: css 2s ease;
+  -moz-animation: css 2s ease paused;
+  -webkit-animation: css 2s ease paused;
 }
 .html5 {
-  -moz-animation: html5 2s ease;
-  -webkit-animation: html5 2s ease;
+  -moz-animation: html5 2s ease paused;
+  -webkit-animation: html5 2s ease paused;
 }
 .mongodb {
-  -moz-animation: mongodb 2s ease;
-  -webkit-animation: mongodb 2s ease;
+  -moz-animation: mongodb 2s ease paused;
+  -webkit-animation: mongodb 2s ease paused;
 }
 .linux {
-  -moz-animation: linux 2s ease;
-  -webkit-animation: linux 2s ease;
+  -moz-animation: linux 2s ease paused;
+  -webkit-animation: linux 2s ease paused;
 }
 .python {
-  -moz-animation: python 2s ease;
-  -webkit-animation: python 2s ease;
+  -moz-animation: python 2s ease paused;
+  -webkit-animation: python 2s ease paused;
 }
 .bash {
-  -moz-animation: bash 2s ease;
-  -webkit-animation: bash 2s ease;
+  -moz-animation: bash 2s ease paused;
+  -webkit-animation: bash 2s ease paused;
 }
 .packer {
-  -moz-animation: packer 2s ease;
-  -webkit-animation: packer 2s ease;
+  -moz-animation: packer 2s ease paused;
+  -webkit-animation: packer 2s ease paused;
 }
 
 @-moz-keyframes javascript {
