@@ -332,9 +332,6 @@ ul#nav li.current a {
 /*	Skill Bars
 /*----------------------------------------------*/
 
-.animate {
-  animation-play-state: running;
-}
 
 .bars {
   width: 95%;
@@ -375,9 +372,16 @@ ul#nav li.current a {
   border-radius: 3px 0 0 3px;
 }
 
+.bar-expand.animate {
+    -moz-animation-play-state: running;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
 .javascript {
+  -moz-animation: javascript 2s ease paused;
   -webkit-animation: javascript 2s ease paused;
-  -webkit-animation: javascript 2s ease paused;
+  animation: javascript 2s ease paused;
 }
 .reactjs {
   -moz-animation: reactjs 2s ease paused;
