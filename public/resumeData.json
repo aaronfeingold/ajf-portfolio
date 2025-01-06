@@ -48,16 +48,17 @@
     "work": [
       {
         "company": "Code Willing",
-        "title": "Lead Full-Stack Developer",
+        "title": "Full-Stack Engineer",
         "location": "New Orleans, LA",
-        "years": "January 2023 - June 2024",
-        "description": "DevOps and MERN engineer creating a Big Data, cloud-based ML laboratory for HFT"
+        "years": "Jan. 2023 - June 2024",
+        "description": "Much as before, but now wearing many hats, leading a team, and engineering all the things."
       },
       {
         "company": "Code Willing",
         "title": "DevOps Engineer",
         "location": "New Orleans, LA",
-        "years": "June 2021 - January 2023"
+        "years": "June 2021 - Jan. 2023",
+        "description": "DevOps and MERN engineer creating a Big Data, cloud-based ML laboratory for HFT."
       },
       {
         "company": "KIPP Schools",
