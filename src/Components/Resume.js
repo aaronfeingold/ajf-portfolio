@@ -1,15 +1,25 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useEffect, useRef, useCallback } from "react";
 import { useInView } from "react-intersection-observer";
 
 const Resume = ({ data }) => {
-  const [ref, inView] = useInView({
-    threshold: 0.1, // Trigger animation when 10% of the bars section is visible
+  const ref = useRef();
+  const { ref: inViewRef, inView } = useInView({
+    threshold: 0.2, // Trigger animation when 10% of the bars section is visible
     triggerOnce: true, // Animation will only run once
   });
 
+  const setRefs = useCallback(
+    (node) => {
+      // Ref's from useRef needs to have the node assigned to `current`
+      ref.current = node;
+      // Callback refs, like the one from `useInView`, is a function that takes the node as an argument
+      inViewRef(node);
+    },
+    [inViewRef]
+  );
+
   const skillsMessage =
-    data.skillsMessage ||
-    "'I don't even have any good skills. You know, like nunchuck skills, bow hunting skills, computer hacking skills. [Employers] only want [employees] who have great skills!' \n - Napoleon Dynamite";
+    data.skillsMessage || "Loose Yourself to Dance \n - Pharrell Williams";
 
   const [message, quoteAuthor] = skillsMessage.split("\n");
 
@@ -39,29 +49,75 @@ const Resume = ({ data }) => {
       ))
     : [];
 
+  const addSkillAnimation = (skillName, skillLevel) => {
+    const keyframes = `
+            @keyframes ${skillName} {
+            0% { width: 0; }
+            100% { width: ${skillLevel}; }
+            }
+        `;
+    const styleSheet = Array.from(document.styleSheets).find(
+      (sheet) => sheet.href && sheet.href.includes("layout.css")
+    );
+    styleSheet.insertRule(keyframes, styleSheet.cssRules.length);
+  };
+
   const skillsList = useMemo(
     () =>
       Array.isArray(data.skills)
         ? data.skills.map((skill) => {
-            const className = `bar-expand ${skill.name.toLowerCase()} ${
-              inView ? "animate" : ""
-            }`;
+            const animationName = `${skill.name.toLowerCase()}-bar`;
+            addSkillAnimation(animationName, skill.level);
             return (
               <li key={skill.name}>
                 <span
-                  style={{ width: skill.level }}
-                  className={className}
+                  style={{
+                    width: skill.level,
+                    animationName,
+                  }}
+                  className="bar-expand"
                 ></span>
                 <em>{skill.desc}</em>
               </li>
             );
           })
         : [],
-    [inView, data.skills]
+    [data.skills]
   );
+
+  useEffect(() => {
+    if (inView && ref?.current) {
+      const items = ref.current.querySelectorAll("li span");
+      items.forEach((span) => {
+        span.classList.add("animate");
+      });
+    }
+  }, [ref, inView]);
 
   return (
     <section id="resume">
+      <div className="row work">
+        <div className="three columns header-col">
+          <h1>
+            <span>Work</span>
+          </h1>
+        </div>
+        <div className="nine columns main-col">{workList}</div>
+      </div>
+      <div className="row skill">
+        <div className="three columns header-col">
+          <h1>
+            <span>Skills</span>
+          </h1>
+        </div>
+        <div className="nine columns main-col" ref={setRefs}>
+          <p>{message}</p>
+          <p>{quoteAuthor}</p>
+          <div className="bars">
+            <ul className="skills">{skillsList}</ul>
+          </div>
+        </div>
+      </div>
       <div className="row education">
         <div className="three columns header-col">
           <h1>
@@ -72,29 +128,6 @@ const Resume = ({ data }) => {
         <div className="nine columns main-col">
           <div className="row item">
             <div className="twelve columns">{educationList}</div>
-          </div>
-        </div>
-      </div>
-      <div className="row work">
-        <div className="three columns header-col">
-          <h1>
-            <span>Work</span>
-          </h1>
-        </div>
-
-        <div className="nine columns main-col">{workList}</div>
-      </div>
-      <div className="row skill">
-        <div className="three columns header-col">
-          <h1>
-            <span>Skills</span>
-          </h1>
-        </div>
-        <div className="nine columns main-col">
-          <p>{message}</p>
-          <p>{quoteAuthor}</p>
-          <div className="bars" ref={ref}>
-            <ul className="skills">{skillsList}</ul>
           </div>
         </div>
       </div>

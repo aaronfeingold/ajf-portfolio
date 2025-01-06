@@ -192,6 +192,7 @@ h1.responsive-headline.responsive {
     font-size: clamp(var(--min-font-size), var(--ratio), var(--max-font-size));
   }
 
+
 p { margin: 0 0 30px 0; }
 p img { margin: 0; }
 p.lead {
@@ -742,8 +743,8 @@ properly.
 @media only screen and (max-width: 767px) {
 
    .row {
-	   width: 460px;
-	   margin: 0 auto;
+      width: 460px;
+	  margin: 0 auto;
       padding: 0;
 	}
    .column, .columns {
