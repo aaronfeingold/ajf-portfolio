@@ -1,4 +1,5 @@
 import React from 'react';
+import ResumeDownload from "./ResumeDownload";
 
 const About = ({ data }) => {
   const { image, bio, email, resumeDownload } = data || {};
@@ -33,7 +34,8 @@ const About = ({ data }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fa fa-download"></i>Download Resume
+                  <i className="fa fa-download"></i>
+                  <ResumeDownload />
                 </a>
               </p>
             </div>
