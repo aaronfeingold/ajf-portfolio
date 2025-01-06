@@ -64,6 +64,12 @@ To get started with the project, follow these steps:
 **NOTE**
 - This project uses Node v16. See nvmrc.
 
+## Cloudflare Integrations
+
+- Stored PDF in bucket on R2
+- Use Worker to get a signedUrl
+- This will allow for secure download, and the ability to upload a new resume without website redeployment
+
 ## Running
 
 To run the project locally, use the following command:
