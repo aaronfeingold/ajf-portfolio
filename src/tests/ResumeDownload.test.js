@@ -146,4 +146,57 @@ describe("ResumeDownload Component", () => {
       });
     });
   });
+it("shows error modal when download fails", async () => {
+  const consoleSpy = jest.spyOn(console, "error").mockImplementation(() => {});
+
+  global.fetch.mockImplementationOnce(() =>
+    Promise.reject(new Error("Network error"))
+  );
+
+  render(<ResumeDownload />);
+  const button = screen.getByRole("button");
+
+  await act(async () => {
+    fireEvent.click(button);
+    await waitFor(() => {
+      expect(
+        screen.getByText(
+          "Unable to download resume. Please try again later or contact me directly."
+        )
+      ).toBeInTheDocument();
+    });
+  });
+
+  consoleSpy.mockRestore();
+});
+
+it("closes error modal when clicking close button", async () => {
+  global.fetch.mockImplementationOnce(() =>
+    Promise.reject(new Error("Network error"))
+  );
+
+  render(<ResumeDownload />);
+  const button = screen.getByRole("button");
+
+  await act(async () => {
+    fireEvent.click(button);
+    await waitFor(() => {
+      const errorMessage = screen.getByText(
+        "Unable to download resume. Please try again later or contact me directly."
+      );
+      expect(errorMessage).toBeInTheDocument();
+    });
+  });
+
+  await act(async () => {
+    fireEvent.click(screen.getByText("Close"));
+    await waitFor(() => {
+      expect(
+        screen.queryByText(
+          "Unable to download resume. Please try again later or contact me directly."
+        )
+      ).not.toBeInTheDocument();
+    });
+  });
+});
 });
