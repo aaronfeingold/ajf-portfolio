@@ -6,9 +6,7 @@ const ResumeDownload = () => {
   const handleDownload = async () => {
     setLoading(true);
     try {
-      const response = await fetch(
-        "https://resume-worker.ajfeingold88.workers.dev"
-      );
+      const response = await fetch(process.env.REACT_APP_R2_WORKER_URL);
       const data = await response.json();
       if (data.url) {
         // Redirect to the signed URL to download the file
