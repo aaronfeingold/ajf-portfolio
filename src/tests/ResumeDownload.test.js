@@ -1,8 +1,14 @@
 // src/tests/ResumeDownload.test.js
 import React from "react";
-import { render, screen, fireEvent, waitFor } from "@testing-library/react";
+import {
+  render,
+  screen,
+  fireEvent,
+  waitFor,
+  act,
+} from "@testing-library/react";
 import "@testing-library/jest-dom";
-import ResumeDownload from "../components/ResumeDownload";
+import ResumeDownload from "../Components/ResumeDownload";
 
 // Mock the fetch function
 global.fetch = jest.fn();
@@ -13,7 +19,6 @@ window.location = mockLocation;
 
 describe("ResumeDownload Component", () => {
   beforeEach(() => {
-    // Clear all mocks before each test
     jest.clearAllMocks();
     process.env.REACT_APP_R2_WORKER_URL = "https://test-worker.url";
   });
@@ -43,10 +48,14 @@ describe("ResumeDownload Component", () => {
     render(<ResumeDownload />);
     const button = screen.getByRole("button");
 
-    fireEvent.click(button);
-
-    expect(button).toHaveTextContent("Preparing Download...");
-    expect(button).toBeDisabled();
+    await act(async () => {
+      fireEvent.click(button);
+      // Wait for any state updates
+      await waitFor(() => {
+        expect(button).toHaveTextContent("Preparing Download...");
+        expect(button).toBeDisabled();
+      });
+    });
   });
 
   it("redirects to signed URL on successful fetch", async () => {
@@ -60,15 +69,15 @@ describe("ResumeDownload Component", () => {
     render(<ResumeDownload />);
     const button = screen.getByRole("button");
 
-    fireEvent.click(button);
-
-    await waitFor(() => {
-      expect(window.location.href).toBe(mockSignedUrl);
+    await act(async () => {
+      fireEvent.click(button);
+      await waitFor(() => {
+        expect(window.location.href).toBe(mockSignedUrl);
+      });
     });
   });
 
   it("handles fetch error gracefully", async () => {
-    // Mock console.error to prevent error output in tests
     const consoleSpy = jest
       .spyOn(console, "error")
       .mockImplementation(() => {});
@@ -80,19 +89,19 @@ describe("ResumeDownload Component", () => {
     render(<ResumeDownload />);
     const button = screen.getByRole("button");
 
-    fireEvent.click(button);
-
-    await waitFor(() => {
-      expect(button).not.toBeDisabled();
-      expect(button).toHaveTextContent("Download Resume");
-      expect(consoleSpy).toHaveBeenCalled();
+    await act(async () => {
+      fireEvent.click(button);
+      await waitFor(() => {
+        expect(button).not.toBeDisabled();
+        expect(button).toHaveTextContent("Download Resume");
+        expect(consoleSpy).toHaveBeenCalled();
+      });
     });
 
     consoleSpy.mockRestore();
   });
 
   it("handles missing URL in response", async () => {
-    // Mock console.error to prevent error output in tests
     const consoleSpy = jest
       .spyOn(console, "error")
       .mockImplementation(() => {});
@@ -106,12 +115,13 @@ describe("ResumeDownload Component", () => {
     render(<ResumeDownload />);
     const button = screen.getByRole("button");
 
-    fireEvent.click(button);
-
-    await waitFor(() => {
-      expect(button).not.toBeDisabled();
-      expect(button).toHaveTextContent("Download Resume");
-      expect(consoleSpy).toHaveBeenCalledWith("Failed to fetch signed URL");
+    await act(async () => {
+      fireEvent.click(button);
+      await waitFor(() => {
+        expect(button).not.toBeDisabled();
+        expect(button).toHaveTextContent("Download Resume");
+        expect(consoleSpy).toHaveBeenCalledWith("Failed to fetch signed URL");
+      });
     });
 
     consoleSpy.mockRestore();
@@ -127,10 +137,13 @@ describe("ResumeDownload Component", () => {
     render(<ResumeDownload />);
     const button = screen.getByRole("button");
 
-    fireEvent.click(button);
-
-    expect(global.fetch).toHaveBeenCalledWith(
-      process.env.REACT_APP_R2_WORKER_URL
-    );
+    await act(async () => {
+      fireEvent.click(button);
+      await waitFor(() => {
+        expect(global.fetch).toHaveBeenCalledWith(
+          process.env.REACT_APP_R2_WORKER_URL
+        );
+      });
+    });
   });
 });
