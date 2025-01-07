@@ -42,6 +42,7 @@ const ErrorModal = ({ isOpen, onClose, message }) => {
             background: "none",
             fontSize: "18px",
             cursor: "pointer",
+            color: "#6c757d",
           }}
         >
           ×
