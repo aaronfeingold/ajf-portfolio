@@ -2,7 +2,7 @@ import React from 'react';
 import ResumeDownload from "./ResumeDownload";
 
 const About = ({ data }) => {
-  const { image, bio, email, resumeDownload } = data || {};
+  const { image, bio, email } = data || {};
 
   let profilepic = `images/${image}`;
 
