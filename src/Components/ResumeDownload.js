@@ -6,7 +6,9 @@ const ResumeDownload = () => {
   const handleDownload = async () => {
     setLoading(true);
     try {
-      const response = await fetch("resume-worker.ajfeingold88.workers.dev");
+      const response = await fetch(
+        "https://resume-worker.ajfeingold88.workers.dev"
+      );
       const data = await response.json();
       if (data.url) {
         // Redirect to the signed URL to download the file
@@ -23,6 +25,7 @@ const ResumeDownload = () => {
 
   return (
     <button onClick={handleDownload} disabled={loading}>
+      <i className="fa fa-download"></i>{" "}
       {loading ? "Preparing Download..." : "Download Resume"}
     </button>
   );
