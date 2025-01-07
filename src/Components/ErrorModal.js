@@ -65,3 +65,5 @@ const ErrorModal = ({ isOpen, onClose, message }) => {
     </div>
   );
 };
+
+export default ErrorModal;
