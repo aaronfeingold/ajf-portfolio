@@ -120,7 +120,10 @@ describe("ResumeDownload Component", () => {
       await waitFor(() => {
         expect(button).not.toBeDisabled();
         expect(button).toHaveTextContent("Download Resume");
-        expect(consoleSpy).toHaveBeenCalledWith("Failed to fetch signed URL");
+        expect(consoleSpy).toHaveBeenCalledWith(
+          "Error downloading resume:",
+          expect.any(Error)
+        );
       });
     });
 
