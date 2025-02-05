@@ -62,8 +62,13 @@ To get started with the project, follow these steps:
 3. **Fill in the resumeData.json with your own info**
 
 **NOTE**
-- This project uses Node v16
-- Configuration for nv is included
+- This project uses Node v16. See nvmrc.
+
+## Cloudflare Integrations
+
+- Stored PDF in bucket on R2
+- Use Worker to get a signedUrl
+- This will allow for secure download, and the ability to upload a new resume without website redeployment
 
 ## Running
 

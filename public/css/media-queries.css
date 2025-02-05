@@ -53,8 +53,8 @@
    /* About Section
    ------------------------------------------------------------------- */
    #about .profile-pic {
-      width: 114px;
-      height: 114px;
+      width: 150px;
+      height: 150px;
       margin-left: 12px;
    }
    #about .contact-details { width: 50%; }
@@ -213,12 +213,12 @@
    header .social li { margin: 0 10px; }
 
     /* scrolldown link */
-   header .scrolldown { display: none; }
+   /* header .scrolldown { display: none; } */
 
 
    /* About Section
    -------------------------------------------------------------------- */
-   #about .profile-pic { display: none; }
+   /* #about .profile-pic { display: none; } */
    #about .download .button {
       width: 100%;
       text-align: center;

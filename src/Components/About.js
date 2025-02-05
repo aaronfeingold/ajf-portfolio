@@ -1,20 +1,23 @@
 import React from 'react';
+import ResumeDownload from "./ResumeDownload";
 
 const About = ({ data }) => {
-  const { image, bio, email, resumeDownload } = data || {};
+  const { image, bio, email } = data || {};
 
   let profilepic = `images/${image}`;
 
   return (
     <section id="about">
       <div className="row">
-        <div className="three columns">
+        <div className="column centered">
           <img
             className="profile-pic"
             src={profilepic}
             alt="Aaron Feingold Profile Pic"
           />
         </div>
+      </div>
+      <div className="row">
         <div className="nine columns main-col">
           <h2>About Me</h2>
           <p>{bio}</p>
@@ -27,14 +30,7 @@ const About = ({ data }) => {
             </div>
             <div className="columns download">
               <p>
-                <a
-                  href={resumeDownload}
-                  className="button"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="fa fa-download"></i>Download Resume
-                </a>
+                <ResumeDownload />
               </p>
             </div>
           </div>
