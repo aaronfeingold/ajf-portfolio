@@ -8,7 +8,12 @@ const ResumeDownload = () => {
   const handleDownload = async () => {
     setLoading(true);
     try {
-      const response = await fetch(process.env.REACT_APP_R2_WORKER_URL);
+      const response = await fetch(process.env.REACT_APP_R2_WORKER_URL, {
+        method: "GET", // Or POST, depending on how you're calling it
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
       const data = await response.json();
       if (data.url) {
         window.location.href = data.url;

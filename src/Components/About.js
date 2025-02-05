@@ -9,13 +9,15 @@ const About = ({ data }) => {
   return (
     <section id="about">
       <div className="row">
-        <div className="three columns">
+        <div className="column centered">
           <img
             className="profile-pic"
             src={profilepic}
             alt="Aaron Feingold Profile Pic"
           />
         </div>
+      </div>
+      <div className="row">
         <div className="nine columns main-col">
           <h2>About Me</h2>
           <p>{bio}</p>
