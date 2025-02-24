@@ -9,7 +9,7 @@ const ResumeDownload = () => {
     setLoading(true);
     try {
       const response = await fetch(process.env.REACT_APP_R2_WORKER_URL, {
-        method: "GET", // Or POST, depending on how you're calling it
+        method: "GET",
         headers: {
           "Content-Type": "application/json",
         },

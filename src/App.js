@@ -14,12 +14,23 @@ const App = () => {
   } = useContext(ResumeContext);
 
   useEffect(() => {
-    console.log(wetWilly);
+    console.log(wetWilly); // shout out to millennial s8rs
   }, []);
 
   return (
     <div className="App">
-      {loading && <div className="loading-overlay">Loading...</div>}
+      {loading && (
+        <div className="loading-overlay">
+          <div className="loading-content">
+            <img
+              src="/images/loader.gif"
+              alt="Loading..."
+              className="loading-gif"
+            />
+            <p>Loading awesome content...</p>
+          </div>
+        </div>
+      )}
       <Header data={main} />
       <About data={main} />
       <Resume data={resume} />
