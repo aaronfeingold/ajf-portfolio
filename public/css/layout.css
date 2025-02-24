@@ -41,6 +41,52 @@ header {
   overflow: hidden;
 }
 
+.background-carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+  .carousel-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
+  }
+
+  .carousel-image.active {
+    z-index: 1;
+  }
+
+  .carousel-image.fade-in {
+    opacity: 1;
+  }
+
+  .carousel-image.fade-out {
+    opacity: 0;
+  }
+
+  /* Optional overlay to ensure text readability on any background */
+  .carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    z-index: 0;
+  }
+
 /* vertically center banner section */
 header:before {
   content: "";
@@ -934,24 +980,6 @@ call-to-action .button {
   position: relative;
   left: 18px;
   top: 17px;
-}
-
-/* Twitter Feed */
-#twitter {
-  margin-top: 12px;
-  padding: 0;
-}
-#twitter li {
-  margin: 6px 0px 12px 0;
-  line-height: 30px;
-}
-#twitter li span {
-  display: block;
-}
-#twitter li b a {
-  font: 13px/36px "opensans-regular", Sans-serif;
-  color: #474747 !important;
-  border: none;
 }
 
 /* ------------------------------------------------------------------ */
