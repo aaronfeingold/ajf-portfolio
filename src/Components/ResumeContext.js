@@ -6,9 +6,9 @@ const defaultResumeData = {
   main: {
     name: "Default Profile",
     backgroundImages: [
+      "/images/header-bg.jpg",
       "/images/header-bg-1.jpg",
       "/images/header-bg-2.jpg",
-      "/images/header-bg-3.jpg",
     ],
     social: [
       {

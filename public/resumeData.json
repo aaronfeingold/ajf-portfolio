@@ -3,7 +3,7 @@
     "name": "Aaron Feingold",
     "occupation": "Software Developer",
     "description": "guitarist, sommelier, and software engineer",
-    "image": "headershot_orange_gradient_background.JPG",
+    "image": "profile-image.jpg",
     "bio": "Rocks, Hard Rock and BBQ fanatic. Also, I solve the problems of the food and beverage industry through code. In Vino Veritas.",
     "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
     "email": "ajfeingold88@gmail.com",
@@ -14,6 +14,11 @@
       "state": "LA",
       "zip": "12345"
     },
+    "backgroundImages": [
+      "/images/header-bg.jpg",
+      "/images/header-bg-1.jpg",
+      "/images/header-bg-2.jpg"
+    ],
     "website": "https://a-feingold.medium.com/",
     "resumeDownload": "https://docs.google.com/document/d/1UUaSETqjqGsmDjEtcdo8aH_4lRoUYvIN4WSaDh3lS20/pub",
     "social": [
@@ -135,7 +140,7 @@
       {
         "title": "Professional Portfolio",
         "category": "Tired of social media, but need something to show off? Use this to create a professional portfolio",
-        "image": "jessfeingolddotcom.jpg",
+        "image": "portfolio-builder.jpg",
         "url": "https://rad-kangaroo-4d01f2.netlify.app"
       }
     ]
