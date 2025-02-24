@@ -25,7 +25,6 @@
       "/images/header-bg-3-founder.jpg": {
         "position": "center 30%",
         "style": {
-          "backgroundSize": "contain",
           "backgroundColor": "#000000"
         }
       }
