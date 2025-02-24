@@ -17,8 +17,19 @@
     "backgroundImages": [
       "/images/header-bg.jpg",
       "/images/header-bg-1.jpg",
-      "/images/header-bg-2.jpg"
+      "/images/header-bg-2.jpg",
+      "/images/header-bg-3-founder.jpg"
     ],
+    "defaultBackground": "/images/testimonials-bg.jpg",
+    "imageSettings": {
+      "/images/header-bg-3-founder.jpg": {
+        "position": "center 30%",
+        "style": {
+          "backgroundSize": "contain",
+          "backgroundColor": "#000000"
+        }
+      }
+    },
     "website": "https://a-feingold.medium.com/",
     "resumeDownload": "https://docs.google.com/document/d/1UUaSETqjqGsmDjEtcdo8aH_4lRoUYvIN4WSaDh3lS20/pub",
     "social": [
