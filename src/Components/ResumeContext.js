@@ -5,6 +5,11 @@ export const ResumeContext = createContext();
 const defaultResumeData = {
   main: {
     name: "Default Profile",
+    backgroundImages: [
+      "/images/header-bg-1.jpg",
+      "/images/header-bg-2.jpg",
+      "/images/header-bg-3.jpg",
+    ],
     social: [
       {
         name: "antisocial",
@@ -37,6 +42,11 @@ export const ResumeProvider = ({ children }) => {
         },
       });
       const data = await response.json();
+
+      if (data.main && !data.main.backgroundImages) {
+        data.main.backgroundImages = defaultResumeData.main.backgroundImages;
+      }
+
       setResumeData(data);
     } catch (error) {
       console.error("Error fetching resume data:", error);
