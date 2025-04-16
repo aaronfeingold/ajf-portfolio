@@ -107,37 +107,57 @@
     "skills": [
       {
         "name": "javascript",
-        "desc": "JavaScript/Type-Script",
+        "desc": "JavaScript",
         "level": "100%"
-      },
-      {
-        "name": "git",
-        "desc": "Git on GitLab/Hub",
-        "level": "100%"
-      },
-      {
-        "name": "reactjs",
-        "desc": "React-Redux/JSX/TSX",
-        "level": "90%"
-      },
-      {
-        "name": "nodejs",
-        "desc": "NodeJS/ExpressJS",
-        "level": "90%"
-      },
-      {
-        "name": "mongodb",
-        "desc": "MongoDB/Atlas",
-        "level": "80%"
-      },
-      {
-        "name": "linux",
-        "desc": "RHEL/CentOs/Ubuntu/Arch/Rocky",
-        "level": "80%"
       },
       {
         "name": "python",
         "desc": "Python",
+        "level": "80%"
+      },
+      {
+        "name": "javascript",
+        "desc": "TypeScript",
+        "level": "90%"
+      },
+      {
+        "name": "git",
+        "desc": "GitHubGitLab CI/CD",
+        "level": "100%"
+      },
+      {
+        "name": "reactjs",
+        "desc": "React",
+        "level": "100%"
+      },
+      {
+        "name": "nodejs",
+        "desc": "NodeJS",
+        "level": "90%"
+      },
+      {
+        "name": "fastApi",
+        "desc": "FastAPI",
+        "level": "75%"
+      },
+      {
+        "name": "mongodb",
+        "desc": "MongoDB (NoSQL)",
+        "level": "95%"
+      },
+      {
+        "name": "postgresql",
+        "desc": "PostgreSQL",
+        "level": "80%"
+      },
+      {
+        "name": "docker",
+        "desc": "Docker",
+        "level": "50%"
+      },
+      {
+        "name": "linux",
+        "desc": "Linux (RHEL/Fedora/Ubuntu)",
         "level": "80%"
       },
       {
