@@ -1,14 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Portfolio = ({ data }) => {
   const projects = Array.isArray(data.projects)
     ? data.projects.map((proj) => {
         let projectImage = `/images/portfolio/${proj.image}`;
+        const projectSlug = proj.title.toLowerCase().replace(/\s+/g, '-');
 
         return (
           <div key={proj.title} className="columns portfolio-item">
             <div className="item-wrap">
-              <a href={proj.url} title={proj.title}>
+              <Link to={`/project/${projectSlug}`} title={proj.title}>
                 <img alt={proj.title} src={projectImage} />
                 <div className="overlay">
                   <div className="portfolio-item-meta">
@@ -19,7 +21,7 @@ const Portfolio = ({ data }) => {
                 <div className="link-icon">
                   <i className="fa fa-link"></i>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         );
