@@ -2,9 +2,9 @@
   "main": {
     "name": "Aaron Feingold",
     "occupation": "Software Developer",
-    "description": "guitarist, sommelier, and software engineer",
+    "description": "software developer, sommelier, and entrepreneur",
     "image": "profile-image.jpg",
-    "bio": "Rocks, Hard Rock and BBQ fanatic. Also, I solve the problems of the food and beverage industry through code. In Vino Veritas.",
+    "bio": "",
     "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
     "email": "ajfeingold88@gmail.com",
     "phone": "555-555-5555",
@@ -41,6 +41,12 @@
         "name": "github",
         "url": "https://github.com/aaronfeingold",
         "className": "fa fa-github"
+      },
+      {
+        "name": "substack",
+        "url": "https://substack.com/@aaronfeingold",
+        "className": "social-icon",
+        "imageSrc": "/images/social/substack.png"
       }
     ]
   },
@@ -61,6 +67,13 @@
       }
     ],
     "work": [
+      {
+        "company": "inVino.io",
+        "title": "Founder",
+        "location": "New Orleans, LA",
+        "years": "Nov. 2024 - Present",
+        "description": "Building the future of wine, one app at a time."
+      },
       {
         "company": "Code Willing",
         "title": "Full-Stack Engineer",

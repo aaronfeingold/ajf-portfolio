@@ -6,7 +6,16 @@ const Footer = ({ data }) => {
   const networks = social.map((network) => (
     <li key={network.name}>
       <a href={network.url} target="_blank" rel="noopener noreferrer">
-        <i className={network.className}></i>
+        {network.imageSrc ? (
+          <img
+            src={network.imageSrc}
+            alt={network.name}
+            className={network.className}
+            style={{ width: '30px', height: '30px', verticalAlign: 'middle' }}
+          />
+        ) : (
+          <i className={network.className}></i>
+        )}
       </a>
     </li>
   ));

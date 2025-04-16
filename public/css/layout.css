@@ -103,6 +103,15 @@ header .social li a:hover {
   color: #11abb0;
 }
 
+/* Add styles for image-based social icons */
+header .social li .social-icon {
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s ease-in-out;
+}
+header .social li a:hover .social-icon {
+  filter: brightness(0) invert(0.7) sepia(1) saturate(5) hue-rotate(152deg);
+}
+
 /* scrolldown link */
 header .scrolldown a {
   position: absolute;
@@ -1138,4 +1147,13 @@ footer .social-links li:first-child {
 }
 #go-top a:hover {
   background-color: #0f9095;
+}
+
+/* Footer social icon styles */
+footer .social-links li .social-icon {
+  filter: brightness(0.3);
+  transition: filter 0.3s ease-in-out;
+}
+footer .social-links li a:hover .social-icon {
+  filter: brightness(0) invert(1);
 }
