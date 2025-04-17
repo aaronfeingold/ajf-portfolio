@@ -1,37 +1,19 @@
 import React from 'react';
-
+import SocialLinks from './SocialLinks';
 const Footer = ({ data }) => {
   let { social = [] } = data || {};
-
-  const networks = social.map((network) => (
-    <li key={network.name}>
-      <a href={network.url} target="_blank" rel="noopener noreferrer">
-        {network.imageSrc ? (
-          <img
-            src={network.imageSrc}
-            alt={network.name}
-            className={network.className}
-            style={{ width: '30px', height: '30px', verticalAlign: 'middle' }}
-          />
-        ) : (
-          <i className={network.className}></i>
-        )}
-      </a>
-    </li>
-  ));
 
   return (
     <footer>
       <div className="row">
         <div className="twelve columns">
-          <ul className="social-links">{networks}</ul>
+        <ul className="social-links">
+            <SocialLinks social={social} location="footer" />
+          </ul>
           <ul className="copyright">
-            <li>&copy; Copyright 2024 Aaron Feingold</li>
+            <li>&copy; Copyright 2025 Aaron Feingold</li>
             <li>
-              Additional Designs by{" "}
-              <a title="Styleshout" href="http://www.styleshout.com/">
-                Styleshout
-              </a>
+                Develop. Distribute. Democratize.
             </li>
           </ul>
         </div>

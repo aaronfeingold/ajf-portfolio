@@ -2,6 +2,7 @@ import React, { useEffect, useContext } from "react";
 import NavBar from "./NavBar";
 import BackgroundCarousel from "./BackgroundCarousel";
 import { ResumeContext } from "./ResumeContext";
+import SocialLinks from "./SocialLinks";
 
 const Header = ({ data }) => {
   const { loading } = useContext(ResumeContext);
@@ -19,25 +20,6 @@ const Header = ({ data }) => {
     defaultBackground = "/images/testimonials-bg.jpg",
     imageSettings = {},
   } = data || {};
-
-  const networks = Array.isArray(social)
-    ? social.map((network) => (
-        <li key={network.name}>
-          <a href={network.url} target="_blank" rel="noopener noreferrer">
-            {network.imageSrc ? (
-              <img
-                src={network.imageSrc}
-                alt={network.name}
-                className={network.className}
-                style={{ width: '30px', height: '30px', verticalAlign: 'middle' }}
-              />
-            ) : (
-              <i className={network.className}></i>
-            )}
-          </a>
-        </li>
-      ))
-    : null;
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -67,7 +49,9 @@ const Header = ({ data }) => {
           <h1 className="responsive-headline">{name}</h1>
           <h2>{description}</h2>
           <hr />
-          <ul className="social">{networks}</ul>
+          <ul className="social">
+            <SocialLinks social={social} location="header" />
+          </ul>
         </div>
       </div>
       <p className="scrolldown">
