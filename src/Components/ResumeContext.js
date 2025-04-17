@@ -42,7 +42,7 @@ export const ResumeProvider = ({ children }) => {
         const isDataFresh = Date.now() - parseInt(storedTimestamp) < 24 * 60 * 60 * 1000;
 
         if (isDataFresh) {
-          return setResumeData(JSON.parse(storedData));
+          return JSON.parse(storedData);
         }
       }
       return null;
