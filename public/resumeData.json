@@ -116,13 +116,13 @@
         "level": "80%"
       },
       {
-        "name": "javascript",
+        "name": "typescript",
         "desc": "TypeScript",
         "level": "90%"
       },
       {
         "name": "git",
-        "desc": "GitHubGitLab CI/CD",
+        "desc": "GitHub/GitLab CI/CD",
         "level": "100%"
       },
       {
