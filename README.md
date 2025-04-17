@@ -30,22 +30,17 @@ The project relies on several key dependencies:
 
 - **React**: A JavaScript library for building user interfaces.
 - **React DOM**: For rendering React components in the DOM.
+- **React Router**: For handling client-side routing.
 - **React Intersection Observer**: For handling intersection events.
 - **jQuery**: For DOM manipulation and AJAX requests.
 - **React Scripts**: For running and building the React application.
+- **Prettier**: For code formatting and consistency.
 
-### Scripts
+### Development Tools
 
-The project includes several npm scripts for common tasks:
-
-- `start`: Runs the development server.
-- `build`: Builds the application for production.
-- `test`: Runs the test suite.
-- `eject`: Ejects the configuration files from react-scripts.
-
-### ESLint Configuration
-
-The project uses ESLint for code linting, with configurations extending from `react-app` and `react-app/jest`.
+- **ESLint**: For code linting and maintaining code quality
+- **VSCode**: Recommended IDE with Prettier extension for formatting
+- **Node.js**: Runtime environment (v16 required)
 
 ## Installation
 
@@ -64,6 +59,45 @@ To get started with the project, follow these steps:
 **NOTE**
 
 - This project uses Node v16. See nvmrc.
+
+## Contributing
+
+### Adding New Components
+
+1. Create new components in `src/components/`
+2. Follow existing component patterns:
+   - Use functional components with hooks
+   - Implement proper prop types
+   - Include necessary imports
+   - Add ESLint disable comments where appropriate
+
+### Styling Guidelines
+
+1. CSS files are organized in `public/css/`:
+   - `default.css`: Base styles and resets
+   - `layout.css`: Main layout and component styles
+   - `media-queries.css`: Responsive design rules
+
+2. When adding new styles:
+   - Follow the existing CSS structure
+   - Use consistent naming conventions
+   - Add responsive design considerations
+   - Place styles in the appropriate CSS file
+   - Use Prettier for formatting
+
+3. Component-specific styles:
+   - For new components, add styles to `layout.css`
+   - Follow the existing class naming pattern
+   - Include responsive design rules
+   - Document any new classes in the component's comments
+
+### Code Quality
+
+- Use Prettier for consistent formatting
+- Follow ESLint rules
+- Add appropriate comments and documentation
+- Test changes across different screen sizes
+- Ensure accessibility standards are met
 
 ## Cloudflare Integrations
 
