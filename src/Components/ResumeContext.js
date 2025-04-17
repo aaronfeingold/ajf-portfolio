@@ -32,7 +32,30 @@ export const ResumeProvider = ({ children }) => {
   const [resumeData, setResumeData] = useState(defaultResumeData);
   const [loading, setLoading] = useState(false);
 
+  const getStoredData = () => {
+    try {
+      const storedData = localStorage.getItem('resumeData');
+      const storedTimestamp = localStorage.getItem('resumeDataTimestamp');
+
+      if (storedData && storedTimestamp) {
+        // Check if data is fresh (less than 24 hours old)
+        const isDataFresh = Date.now() - parseInt(storedTimestamp) < 24 * 60 * 60 * 1000;
+
+        if (isDataFresh) {
+          return setResumeData(JSON.parse(storedData));
+        }
+      }
+      return null;
+    } catch (error) {
+      console.error('Error reading from localStorage:', error);
+      return null;
+    }
+  };
+
   const getResumeData = async () => {
+    // Skip fetch if we already have fresh data from localStorage
+    if (getStoredData()) return;
+
     setLoading(true);
     try {
       const response = await fetch("resumeData.json", {
@@ -48,6 +71,9 @@ export const ResumeProvider = ({ children }) => {
       }
 
       setResumeData(data);
+       // Store in localStorage with timestamp
+       localStorage.setItem('resumeData', JSON.stringify(data));
+       localStorage.setItem('resumeDataTimestamp', Date.now().toString());
     } catch (error) {
       console.error("Error fetching resume data:", error);
     } finally {
