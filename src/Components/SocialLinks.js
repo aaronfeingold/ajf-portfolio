@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SocialLinks = ({ social, location }) => {
+const SocialLinks = ({ social }) => {
   if (!Array.isArray(social) || social.length === 0) return null;
 
   return social.map((network) => (
