@@ -1,216 +1,216 @@
 {
-  "main": {
-    "name": "Aaron Feingold",
-    "occupation": "Software Developer",
-    "description": "software developer, sommelier, and entrepreneur",
-    "image": "profile-image.jpg",
-    "bio": "",
-    "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
-    "email": "ajfeingold88@gmail.com",
-    "phone": "555-555-5555",
-    "address": {
-      "street": "123 Some St.",
-      "city": "New Orleans and New York",
-      "state": "LA",
-      "zip": "12345"
-    },
-    "backgroundImages": [
-      "/images/header-bg.jpg",
-      "/images/header-bg-1.jpg",
-      "/images/header-bg-2.jpg",
-      "/images/header-bg-3-founder.jpg"
-    ],
-    "defaultBackground": "/images/testimonials-bg.jpg",
-    "imageSettings": {
-      "/images/header-bg-3-founder.jpg": {
-        "position": "center 30%",
-        "style": {
-          "backgroundColor": "#000000"
-        }
-      }
-    },
-    "website": "https://a-feingold.medium.com/",
-    "resumeDownload": "https://docs.google.com/document/d/1UUaSETqjqGsmDjEtcdo8aH_4lRoUYvIN4WSaDh3lS20/pub",
-    "social": [
-      {
-        "name": "linkedin",
-        "url": "https://www.linkedin.com/in/aaron-feingold/",
-        "className": "fa fa-linkedin"
-      },
-      {
-        "name": "github",
-        "url": "https://github.com/aaronfeingold",
-        "className": "fa fa-github"
-      },
-      {
-        "name": "substack",
-        "url": "https://substack.com/@aaronfeingold",
-        "className": "social-icon",
-        "imageSrc": "/images/social/substack.png"
-      }
-    ]
-  },
-  "resume": {
-    "education": [
-      {
-        "school": "The Flatiron School",
-        "url": "https://flatironschool.com/",
-        "degree": "Full-stack Web Development",
-        "graduated": "November 2020",
-        "description": "React, Rails, and Postgresql"
-      },
-      {
-        "school": "Tulane University",
-        "degree": "Political Science and Latin American Studies",
-        "graduated": "May 2010",
-        "description": "Tulane was fine, but  New Orleans is awesome, so I never left"
-      }
-    ],
-    "work": [
-      {
-        "company": "inVino.io",
-        "title": "Founder",
-        "location": "New Orleans, LA",
-        "years": "Nov. 2024 - Present",
-        "description": "Building the future of wine, one app at a time."
-      },
-      {
-        "company": "Code Willing",
-        "title": "Full-Stack Engineer",
-        "location": "New Orleans, LA",
-        "years": "Jan. 2023 - June 2024",
-        "description": "Much as before, but now wearing many hats, leading a team, and engineering all the things."
-      },
-      {
-        "company": "Code Willing",
-        "title": "DevOps Engineer",
-        "location": "New Orleans, LA",
-        "years": "June 2021 - Jan. 2023",
-        "description": "DevOps and MERN engineer creating a Big Data, cloud-based ML laboratory for HFT."
-      },
-      {
-        "company": "KIPP Schools",
-        "title": "Database Engineer",
-        "location": "New Orleans, LA",
-        "years": "April 2021 - June 2021",
-        "description": "Built a Python mapper from scratch for MYSQL to aggregate data pipelines for state reporting"
-      },
-      {
-        "company": "Republic National Distributing Company",
-        "title": "On-Premise Sales Representative",
-        "location": "New Orleans, LA",
-        "years": "April 2015 - May 2020",
-        "description": "Selling wine full time. One of the greatest jobs you could ever have."
-      }
-    ],
-    "skillsMessage": "'I don't even have any good skills. You know, like nunchuck skills, bow hunting skills, computer hacking skills. [Employers] only want [employees] who have great skills!' \n - Napoleon Dynamite",
-    "skills": [
-      {
-        "name": "javascript",
-        "desc": "JavaScript",
-        "level": "100%"
-      },
-      {
-        "name": "python",
-        "desc": "Python",
-        "level": "80%"
-      },
-      {
-        "name": "typescript",
-        "desc": "TypeScript",
-        "level": "90%"
-      },
-      {
-        "name": "git",
-        "desc": "GitHub/GitLab CI/CD",
-        "level": "100%"
-      },
-      {
-        "name": "reactjs",
-        "desc": "React",
-        "level": "100%"
-      },
-      {
-        "name": "nodejs",
-        "desc": "NodeJS",
-        "level": "90%"
-      },
-      {
-        "name": "fastApi",
-        "desc": "FastAPI",
-        "level": "75%"
-      },
-      {
-        "name": "mongodb",
-        "desc": "MongoDB (NoSQL)",
-        "level": "95%"
-      },
-      {
-        "name": "postgresql",
-        "desc": "PostgreSQL",
-        "level": "80%"
-      },
-      {
-        "name": "docker",
-        "desc": "Docker",
-        "level": "50%"
-      },
-      {
-        "name": "linux",
-        "desc": "Linux (RHEL/Fedora/Ubuntu)",
-        "level": "80%"
-      },
-      {
-        "name": "bash",
-        "desc": "Bash",
-        "level": "75%"
-      },
-      {
-        "name": "packer",
-        "desc": "Packer",
-        "level": "50%"
-      }
-    ]
-  },
-  "portfolio": {
-    "projects": [
-      {
-        "id": "1",
-        "title": "SIP: Sommelier in Pocket",
-        "category": "Enhance your diners' wine experience with this app",
-        "image": "somm-in-palm.jpg",
-        "url": "https://sip-the-owl.vercel.app/",
-        "description": "SIP (Sommelier in Pocket) is an innovative mobile application designed to revolutionize the wine service industry. It provides restaurant staff with instant access to comprehensive wine information, helping them deliver exceptional service without requiring extensive wine knowledge.",
-        "techStack": [
-          "Next.js",
-          "TailwindCSS",
-          "FastAPI",
-          "MongoDB",
-          "AWS",
-          "Docker"
+    "main": {
+        "name": "Aaron Feingold",
+        "occupation": "Software Developer",
+        "description": "software developer, sommelier, and entrepreneur",
+        "image": "profile-image.jpg",
+        "bio": "",
+        "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
+        "email": "ajfeingold88@gmail.com",
+        "phone": "555-555-5555",
+        "address": {
+            "street": "123 Some St.",
+            "city": "New Orleans and New York",
+            "state": "LA",
+            "zip": "12345"
+        },
+        "backgroundImages": [
+            "/images/header-bg.jpg",
+            "/images/header-bg-1.jpg",
+            "/images/header-bg-2.jpg",
+            "/images/header-bg-3-founder.jpg"
         ],
-        "blogUrl": "https://medium.com/@aaronfeingold/sip-sommelier-in-pocket",
-        "businessIdea": "The wine service industry faces significant challenges in training and retaining knowledgeable staff. SIP addresses this by providing an accessible, comprehensive wine knowledge platform that can be used by any restaurant staff member. The business model includes subscription-based access for restaurants, with tiered pricing based on the size of the establishment and the level of features required. Future expansion plans include integration with POS systems, wine inventory management, and direct-to-consumer features."
-      },
-      {
-        "id": "2",
-        "title": "AJF Live-re-Wire Community Calendar",
-        "category": "Connect with artists and venues in the New Orleans area",
-        "image": "ajf-live-re-wire.jpg",
-        "url": "https://ajf-live-re-wire.com",
-        "description": "Live-re-Wire is a community-driven platform that connects local artists, venues, and music enthusiasts in New Orleans. It serves as a comprehensive calendar and networking tool for the local music scene.",
-        "techStack": [
-          "React",
-          "Python3.11",
-          "Google Maps API",
-          "ChatGPT",
-          "Scrapy",
-          "Docker",
-          "Bootstrap-UI"
+        "defaultBackground": "/images/testimonials-bg.jpg",
+        "imageSettings": {
+            "/images/header-bg-3-founder.jpg": {
+                "position": "center 30%",
+                "style": {
+                    "backgroundColor": "#000000"
+                }
+            }
+        },
+        "website": "https://a-feingold.medium.com/",
+        "resumeDownload": "https://docs.google.com/document/d/1UUaSETqjqGsmDjEtcdo8aH_4lRoUYvIN4WSaDh3lS20/pub",
+        "social": [
+            {
+                "name": "linkedin",
+                "url": "https://www.linkedin.com/in/aaron-feingold/",
+                "className": "fa fa-linkedin"
+            },
+            {
+                "name": "github",
+                "url": "https://github.com/aaronfeingold",
+                "className": "fa fa-github"
+            },
+            {
+                "name": "substack",
+                "url": "https://substack.com/@aaronfeingold",
+                "className": "social-icon",
+                "imageSrc": "/images/social/substack.png"
+            }
+        ]
+    },
+    "resume": {
+        "education": [
+            {
+                "school": "The Flatiron School",
+                "url": "https://flatironschool.com/",
+                "degree": "Full-stack Web Development",
+                "graduated": "November 2020",
+                "description": "React, Rails, and Postgresql"
+            },
+            {
+                "school": "Tulane University",
+                "degree": "Political Science and Latin American Studies",
+                "graduated": "May 2010",
+                "description": "Tulane was fine, but  New Orleans is awesome, so I never left"
+            }
         ],
-        "blogUrl": "https://medium.com/@aaronfeingold/live-re-wire",
-        "businessIdea": "The New Orleans music scene is vibrant but fragmented, with artists and venues struggling to connect effectively. Live-re-Wire aims to solve this by creating a centralized platform for event discovery and artist promotion. The business model includes premium listings for venues, ticketing integration, and sponsored content opportunities. Future plans include expanding to other music-centric cities and adding features for virtual events and live streaming."
-      }
-    ]
-  }
+        "work": [
+            {
+                "company": "inVino.io",
+                "title": "Founder",
+                "location": "New Orleans, LA",
+                "years": "Nov. 2024 - Present",
+                "description": "Building the future of wine, one app at a time."
+            },
+            {
+                "company": "Code Willing",
+                "title": "Full-Stack Engineer",
+                "location": "New Orleans, LA",
+                "years": "Jan. 2023 - June 2024",
+                "description": "Much as before, but now wearing many hats, leading a team, and engineering all the things."
+            },
+            {
+                "company": "Code Willing",
+                "title": "DevOps Engineer",
+                "location": "New Orleans, LA",
+                "years": "June 2021 - Jan. 2023",
+                "description": "DevOps and MERN engineer creating a Big Data, cloud-based ML laboratory for HFT."
+            },
+            {
+                "company": "KIPP Schools",
+                "title": "Database Engineer",
+                "location": "New Orleans, LA",
+                "years": "April 2021 - June 2021",
+                "description": "Built a Python mapper from scratch for MYSQL to aggregate data pipelines for state reporting"
+            },
+            {
+                "company": "Republic National Distributing Company",
+                "title": "On-Premise Sales Representative",
+                "location": "New Orleans, LA",
+                "years": "April 2015 - May 2020",
+                "description": "Selling wine full time. One of the greatest jobs you could ever have."
+            }
+        ],
+        "skillsMessage": "'I don't even have any good skills. You know, like nunchuck skills, bow hunting skills, computer hacking skills. [Employers] only want [employees] who have great skills!' \n - Napoleon Dynamite",
+        "skills": [
+            {
+                "name": "javascript",
+                "desc": "JavaScript",
+                "level": "100%"
+            },
+            {
+                "name": "python",
+                "desc": "Python",
+                "level": "80%"
+            },
+            {
+                "name": "typescript",
+                "desc": "TypeScript",
+                "level": "90%"
+            },
+            {
+                "name": "git",
+                "desc": "GitHub/GitLab CI/CD",
+                "level": "100%"
+            },
+            {
+                "name": "reactjs",
+                "desc": "React",
+                "level": "100%"
+            },
+            {
+                "name": "nodejs",
+                "desc": "NodeJS",
+                "level": "90%"
+            },
+            {
+                "name": "fastApi",
+                "desc": "FastAPI",
+                "level": "75%"
+            },
+            {
+                "name": "mongodb",
+                "desc": "MongoDB (NoSQL)",
+                "level": "95%"
+            },
+            {
+                "name": "postgresql",
+                "desc": "PostgreSQL",
+                "level": "80%"
+            },
+            {
+                "name": "docker",
+                "desc": "Docker",
+                "level": "50%"
+            },
+            {
+                "name": "linux",
+                "desc": "Linux (RHEL/Fedora/Ubuntu)",
+                "level": "80%"
+            },
+            {
+                "name": "bash",
+                "desc": "Bash",
+                "level": "75%"
+            },
+            {
+                "name": "packer",
+                "desc": "Packer",
+                "level": "50%"
+            }
+        ]
+    },
+    "portfolio": {
+        "projects": [
+            {
+                "id": "1",
+                "title": "SIP: Sommelier in Pocket",
+                "category": "Enhance your diners' wine experience with this app",
+                "image": "somm-in-palm.jpg",
+                "url": "https://sip-the-owl.vercel.app/",
+                "description": "SIP (Sommelier in Pocket) is an innovative mobile application designed to revolutionize the wine service industry. It provides restaurant staff with instant access to comprehensive wine information, helping them deliver exceptional service without requiring extensive wine knowledge.",
+                "techStack": [
+                    "Next.js",
+                    "TailwindCSS",
+                    "FastAPI",
+                    "MongoDB",
+                    "AWS",
+                    "Docker"
+                ],
+                "blogUrl": "https://medium.com/@aaronfeingold/sip-sommelier-in-pocket",
+                "businessIdea": "The wine service industry faces significant challenges in training and retaining knowledgeable staff. SIP addresses this by providing an accessible, comprehensive wine knowledge platform that can be used by any restaurant staff member. The business model includes subscription-based access for restaurants, with tiered pricing based on the size of the establishment and the level of features required. Future expansion plans include integration with POS systems, wine inventory management, and direct-to-consumer features."
+            },
+            {
+                "id": "2",
+                "title": "AJF Live-re-Wire Community Calendar",
+                "category": "Connect with artists and venues in the New Orleans area",
+                "image": "ajf-live-re-wire.jpg",
+                "url": "https://ajf-live-re-wire.com",
+                "description": "Live-re-Wire is a community-driven platform that connects local artists, venues, and music enthusiasts in New Orleans. It serves as a comprehensive calendar and networking tool for the local music scene.",
+                "techStack": [
+                    "React",
+                    "Python3.11",
+                    "Google Maps API",
+                    "ChatGPT",
+                    "Scrapy",
+                    "Docker",
+                    "Bootstrap-UI"
+                ],
+                "blogUrl": "https://medium.com/@aaronfeingold/live-re-wire",
+                "businessIdea": "The New Orleans music scene is vibrant but fragmented, with artists and venues struggling to connect effectively. Live-re-Wire aims to solve this by creating a centralized platform for event discovery and artist promotion. The business model includes premium listings for venues, ticketing integration, and sponsored content opportunities. Future plans include expanding to other music-centric cities and adding features for virtual events and live streaming."
+            }
+        ]
+    }
 }
