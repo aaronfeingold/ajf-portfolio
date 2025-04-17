@@ -96,6 +96,17 @@ const Resume = ({ data }) => {
 
   return (
     <section id="resume">
+
+
+      <div className="row work">
+        <div className="three columns header-col">
+          <h1>
+            <span>Work</span>
+          </h1>
+        </div>
+        <div className="nine columns main-col">{workList}</div>
+      </div>
+
       <div className="row skill">
         <div className="three columns header-col">
           <h1>
@@ -109,15 +120,6 @@ const Resume = ({ data }) => {
             <ul className="skills">{skillsList}</ul>
           </div>
         </div>
-      </div>
-
-      <div className="row work">
-        <div className="three columns header-col">
-          <h1>
-            <span>Work</span>
-          </h1>
-        </div>
-        <div className="nine columns main-col">{workList}</div>
       </div>
 
       <div className="row education">
