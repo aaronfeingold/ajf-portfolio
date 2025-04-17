@@ -5,12 +5,12 @@ const Portfolio = ({ data }) => {
   const projects = Array.isArray(data.projects)
     ? data.projects.map((proj) => {
         let projectImage = `/images/portfolio/${proj.image}`;
-        const projectSlug = proj.title.toLowerCase().replace(/\s+/g, '-');
+        const projectId = proj.id;
 
         return (
           <div key={proj.title} className="columns portfolio-item">
             <div className="item-wrap">
-              <Link to={`/project/${projectSlug}`} title={proj.title}>
+              <Link to={`/project/${projectId}`} title={proj.title}>
                 <img alt={proj.title} src={projectImage} />
                 <div className="overlay">
                   <div className="portfolio-item-meta">
