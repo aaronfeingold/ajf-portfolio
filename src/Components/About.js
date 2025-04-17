@@ -8,31 +8,27 @@ const About = ({ data }) => {
 
     return (
         <section id="about">
-            <div className="row">
-                <div className="column centered">
+            <div className="about-wrapper row">
+                <div className="column four">
                     <img
                         className="profile-pic"
                         src={profilepic}
                         alt="Aaron Feingold Profile Pic"
                     />
                 </div>
-            </div>
-            <div className="row">
-                <div className="nine columns main-col">
+
+                <div className="about-text column eight">
                     <h2>About Me</h2>
-                    <p>{bio}</p>
-                    <div className="row">
-                        <div className="columns contact-details">
+                    {bio &&
+                        bio
+                            .split('\n\n')
+                            .map((paragraph, i) => <p key={i}>{paragraph}</p>)}
+                    <div className="about-buttons">
+                        <p className="address">
                             <h2>Contact Details</h2>
-                            <p className="address">
-                                <span>{email}</span>
-                            </p>
-                        </div>
-                        <div className="columns download">
-                            <p>
-                                <ResumeDownload />
-                            </p>
-                        </div>
+                            <span>ajfeingold88 [at] gmail [dot] com</span>
+                        </p>
+                        <ResumeDownload />
                     </div>
                 </div>
             </div>

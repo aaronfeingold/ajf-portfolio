@@ -4,7 +4,7 @@
         "occupation": "Software Developer",
         "description": "software developer, sommelier, and entrepreneur",
         "image": "profile-image.jpg",
-        "bio": "",
+        "bio": "I'm Aaron Feingold—a full-stack developer, wine aficionado, and entrepreneur based in New Orleans. My journey has taken me from the nuanced world of fine wines to the dynamic realm of technology, culminating in a mission to revolutionize how we experience wine.\n\nWith a foundation in software development and a deep appreciation for viticulture, I've embarked on creating inVino.io, a platform designed to bridge the gap between vineyards, restaurants, and consumers. Our goal is to develop tools that not only distribute quality wines efficiently but also democratize access to wine knowledge, making it an inclusive experience for all.\n\nMy mantra—Develop. Distribute. Democratize.—encapsulates this vision. It's about crafting experiential solutions that are as elegant as a fine Pinot Noir and as robust as a well-structured Cabernet.\n\nBeyond my ventures, I'm seeking opportunities in full-stack development within startups that value innovation and authenticity. I bring to the table a blend of technical proficiency, leadership experience, and a unique perspective shaped by years in both the wine industry and tech sector.\n\nIf you're interested in collaborating, investing, or simply sharing a glass of wine while discussing the future of tech-enabled experiences, let's connect.",
         "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
         "email": "ajfeingold88@gmail.com",
         "phone": "555-555-5555",
@@ -184,10 +184,14 @@
                 "techStack": [
                     "Next.js",
                     "TailwindCSS",
-                    "FastAPI",
+                    "ExpressAPI",
                     "MongoDB",
-                    "AWS",
-                    "Docker"
+                    "Docker",
+                    "AWS Lambda",
+                    "AWS S3",
+                    "AWS SNS",
+                    "AWS SQS",
+                    "AWS CloudWatch"
                 ],
                 "blogUrl": "https://medium.com/@aaronfeingold/sip-sommelier-in-pocket",
                 "businessIdea": "The wine service industry faces significant challenges in training and retaining knowledgeable staff. SIP addresses this by providing an accessible, comprehensive wine knowledge platform that can be used by any restaurant staff member. The business model includes subscription-based access for restaurants, with tiered pricing based on the size of the establishment and the level of features required. Future expansion plans include integration with POS systems, wine inventory management, and direct-to-consumer features."
@@ -200,15 +204,25 @@
                 "url": "https://ajf-live-re-wire.com",
                 "description": "Live-re-Wire is a community-driven platform that connects local artists, venues, and music enthusiasts in New Orleans. It serves as a comprehensive calendar and networking tool for the local music scene.",
                 "techStack": [
-                    "React",
+                    "Next,js",
+                    "Prisma",
+                    "Supabase",
+                    "TailwindCSS",
                     "Python3.11",
                     "Google Maps API",
+                    "FastAPI",
                     "ChatGPT",
                     "Scrapy",
                     "Docker",
-                    "Bootstrap-UI"
+                    "NeonDB",
+                    "PostgreSQL",
+                    "AWS Lambda",
+                    "AWS S3",
+                    "AWS SNS",
+                    "AWS SQS",
+                    "AWS CloudWatch"
                 ],
-                "blogUrl": "https://medium.com/@aaronfeingold/live-re-wire",
+                "blogUrl": "https://medium.com/@aaronfeingold/live-re- wire",
                 "businessIdea": "The New Orleans music scene is vibrant but fragmented, with artists and venues struggling to connect effectively. Live-re-Wire aims to solve this by creating a centralized platform for event discovery and artist promotion. The business model includes premium listings for venues, ticketing integration, and sponsored content opportunities. Future plans include expanding to other music-centric cities and adding features for virtual events and live streaming."
             }
         ]
