@@ -1,43 +1,39 @@
 import React from 'react';
-import ResumeDownload from "./ResumeDownload";
+import ResumeDownload from './ResumeDownload';
 
 const About = ({ data }) => {
-  const { image, bio, email } = data || {};
+    const { image, bio } = data || {};
 
-  let profilepic = `images/${image}`;
+    let profilepic = `images/${image}`;
 
-  return (
-    <section id="about">
-      <div className="row">
-        <div className="column centered">
-          <img
-            className="profile-pic"
-            src={profilepic}
-            alt="Aaron Feingold Profile Pic"
-          />
-        </div>
-      </div>
-      <div className="row">
-        <div className="nine columns main-col">
-          <h2>About Me</h2>
-          <p>{bio}</p>
-          <div className="row">
-            <div className="columns contact-details">
-              <h2>Contact Details</h2>
-              <p className="address">
-                <span>{email}</span>
-              </p>
+    return (
+        <section id="about">
+            <div className="about-wrapper row">
+                <div className="column four">
+                    <img
+                        className="profile-pic"
+                        src={profilepic}
+                        alt="Aaron Feingold Profile Pic"
+                    />
+                </div>
+
+                <div className="about-text column eight">
+                    <h2>About Me</h2>
+                    {bio &&
+                        bio
+                            .split('\n\n')
+                            .map((paragraph, i) => <p key={i}>{paragraph}</p>)}
+                    <div className="about-buttons">
+                        <p className="address">
+                            <h2>Contact Details</h2>
+                            <span>ajfeingold88 [at] gmail [dot] com</span>
+                        </p>
+                        <ResumeDownload />
+                    </div>
+                </div>
             </div>
-            <div className="columns download">
-              <p>
-                <ResumeDownload />
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+        </section>
+    );
 };
 
 export default About;

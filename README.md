@@ -11,18 +11,18 @@ This project is a personal portfolio website built using React. It showcases var
 The project follows a typical React application structure:
 
 - **src/**: Contains the source code for the application.
-  - **components/**: Reusable React components.
-  - **pages/**: Different pages of the website.
-  - **styles/**: CSS files for styling the components.
-  - **assets/**: Images and other static assets.
-  - **App.js**: The main application component.
-  - **index.js**: The entry point of the application.
+    - **components/**: Reusable React components.
+    - **pages/**: Different pages of the website.
+    - **styles/**: CSS files for styling the components.
+    - **assets/**: Images and other static assets.
+    - **App.js**: The main application component.
+    - **index.js**: The entry point of the application.
 - **public/**:
-  - css/
-  - images/
-  - jQuery/
-  - index.html
-  - resumeData.json
+    - css/
+    - images/
+    - jQuery/
+    - index.html
+    - resumeData.json
 
 ### Dependencies
 
@@ -52,16 +52,17 @@ The project uses ESLint for code linting, with configurations extending from `re
 To get started with the project, follow these steps:
 
 1. **Clone the repository**:
-   ```
-   git clone https://github.com/aaronfeingold/ajf-portfolio
-   ```
+    ```
+    git clone https://github.com/aaronfeingold/ajf-portfolio
+    ```
 2. **Install dependencies**:
-   ```
-   npm install
-   ```
+    ```
+    npm install
+    ```
 3. **Fill in the resumeData.json with your own info**
 
 **NOTE**
+
 - This project uses Node v16. See nvmrc.
 
 ## Cloudflare Integrations
@@ -73,6 +74,7 @@ To get started with the project, follow these steps:
 ## Running
 
 To run the project locally, use the following command:
+
 ```
     npm start
 ```
