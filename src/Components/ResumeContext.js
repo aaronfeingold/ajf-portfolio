@@ -54,7 +54,11 @@ export const ResumeProvider = ({ children }) => {
 
   const getResumeData = async () => {
     // Skip fetch if we already have fresh data from localStorage
-    if (getStoredData()) return;
+    const storedData = getStoredData();
+    if (storedData) {
+      setResumeData(storedData);
+      return;
+    }
 
     setLoading(true);
     try {
