@@ -44,7 +44,7 @@
             },
             {
                 "name": "substack",
-                "url": "https://substack.com/@aaronfeingold",
+                "url": "https://aaronfeingold.substack.com/",
                 "className": "social-icon",
                 "imageSrc": "/images/social/substack.png"
             }
