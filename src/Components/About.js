@@ -24,10 +24,12 @@ const About = ({ data }) => {
                             .split('\n\n')
                             .map((paragraph, i) => <p key={i}>{paragraph}</p>)}
                     <div className="about-buttons">
-                        <p className="address">
+                        <div className="address">
                             <h2>Contact Details</h2>
-                            <span>ajfeingold88 [at] gmail [dot] com</span>
-                        </p>
+                            <p>
+                                <span>ajfeingold88 [at] gmail [dot] com</span>
+                            </p>
+                        </div>
                         <ResumeDownload />
                     </div>
                 </div>
