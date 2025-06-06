@@ -68,6 +68,13 @@
         ],
         "work": [
             {
+                "company": "Exclaim Recovery",
+                "title": "Lead Full Stack Engineer",
+                "years": "March 2025 - Present",
+                "location": "New Orleans, LA",
+                "description": "Spearheaded the design of a community recovery platform, focusing on mentor-mentee matching and progress tracking. Developed a Next.js/TypeScript RAG chatbot integrated with Prisma/Drizzle and LangChain for addiction recovery support. Achieved a 25% reduction in hosting costs by optimizing Vercel deployment through code splitting and serverless architecture. Fostered an engineering culture by implementing CI/CD best practices and managing feature development via ClickUp."
+            },
+            {
                 "company": "inVino.io",
                 "title": "Founder",
                 "location": "New Orleans, LA",
