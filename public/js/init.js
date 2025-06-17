@@ -88,7 +88,7 @@ jQuery(document).ready(function ($) {
     /*	Modal Popup
 ------------------------------------------------------*/
 
-    $('.item-wrap a').magnificPopup({
+    $('.item-wrap a:not(.router-link)').magnificPopup({
         type: 'inline',
         fixedContentPos: false,
         removalDelay: 200,

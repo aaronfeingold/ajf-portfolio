@@ -10,7 +10,12 @@ const Portfolio = ({ data }) => {
               return (
                   <div key={proj.title} className="columns portfolio-item">
                       <div className="item-wrap">
-                          <Link to={`/project/${projectId}`} title={proj.title}>
+                          <Link
+                              to={`/project/${projectId}`}
+                              title={proj.title}
+                              className="router-link"
+                              data-router="true"
+                          >
                               <img alt={proj.title} src={projectImage} />
                               <div className="overlay">
                                   <div className="portfolio-item-meta">

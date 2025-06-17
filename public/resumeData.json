@@ -183,16 +183,18 @@
         "projects": [
             {
                 "id": "1",
-                "title": "SIP: Sommelier in Pocket",
-                "category": "Enhance your diners' wine experience with this app",
-                "image": "somm-in-palm.jpg",
-                "url": "https://sip-the-owl.vercel.app/",
-                "description": "SIP (Sommelier in Pocket) is an innovative mobile application designed to revolutionize the wine service industry. It provides restaurant staff with instant access to comprehensive wine information, helping them deliver exceptional service without requiring extensive wine knowledge.",
+                "title": "vinovibes.ai",
+                "category": "Food and Wine",
+                "image": "vino-vibes.png",
+                "url": "https://vinovibes.ai",
+                "description": "Meet SIP the Owl, your sommelier in pocket. SIP by vino vibes is a platform that allows you to find the perfect wine for your vibe",
                 "techStack": [
                     "Next.js",
+                    "LagnGraph",
+                    "ChatGPT",
                     "TailwindCSS",
-                    "ExpressAPI",
-                    "MongoDB",
+                    "FastAPI",
+                    "DrizzleORM",
                     "Docker",
                     "AWS Lambda",
                     "AWS S3",
@@ -201,13 +203,13 @@
                     "AWS CloudWatch"
                 ],
                 "blogUrl": "https://aaronfeingold.substack.com/p/from-rags-to-riches-how-to-pitch?r=5htajo",
-                "businessIdea": "The wine service industry faces significant challenges in training and retaining knowledgeable staff. SIP addresses this by providing an accessible, comprehensive wine knowledge platform that can be used by any restaurant staff member. The business model includes subscription-based access for restaurants, with tiered pricing based on the size of the establishment and the level of features required. Future expansion plans include integration with POS systems, wine inventory management, and direct-to-consumer features."
+                "businessIdea": "VinoVibes democratizes fine wine by getting millennials and Gen Z excited about ordering wine at restaurants. Our AI sommelier, SIP the Owl, creates hyper-personalized wine recommendations based on your unique vibes—think favorite athlete (Adam Ondra), music taste (heavy metal), and even your zodiac sign (Pisces)—to select the perfect wine from any restaurant's list. The app eliminates analysis paralysis by providing instant, confident selections while tracking your wine journey and enabling social sharing with fellow vino vibers. Restaurant staff can also use SIP to overcome knowledge gaps, making expert-level recommendations without hiring a sommelier. By combining custom food-wine pairings, personal taste tracking, and vibe-based AI matching, we're making fine wine accessible to everyone while tangentially boosting restaurant wine sales. It's about giving people confidence in their selections and making the wine experience social, personal, and fun."
             },
             {
                 "id": "2",
-                "title": "Fest Vibes",
-                "category": "Music Platform",
-                "image": "ajf-live-re-wire.jpg",
+                "title": "festvibes.ai",
+                "category": "Music and Events",
+                "image": "fest-vibes.png",
                 "url": "https://fest-vibes-nola.netlify.app/",
                 "description": "Transform any day into a personalized music festival. A decentralized music discovery platform that helps users discover live local music, plan with friends, and create the ultimate festival experience. Features AI-powered event recommendations, social collaboration tools, venue insights, and community-driven music discovery for New Orleans music lovers.",
                 "techStack": [
@@ -236,7 +238,7 @@
                     "Vercel"
                 ],
                 "blogUrl": "https://aaronfeingold.substack.com/p/from-rags-to-riches-building-the?r=5htajo",
-                "businessIdea": "A platform that democratizes music festival experiences by allowing users to create personalized, decentralized festivals using local venues and events. Combines AI-powered discovery with social planning tools to help music communities connect and discover live music experiences in their area."
+                "businessIdea": "FestVibes.ai is a platform that democratizes music festival experiences by allowing users to create personalized, decentralized festivals using local venues and events. Combines AI-powered discovery with social planning tools to help music communities connect and discover live music experiences in their area."
             }
         ]
     }
