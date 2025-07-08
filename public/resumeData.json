@@ -72,7 +72,7 @@
                 "title": "Lead Full Stack Engineer",
                 "years": "March 2025 - Present",
                 "location": "New Orleans, LA",
-                "description": "Spearheaded the design of a community recovery platform, focusing on mentor-mentee matching and progress tracking. Developed a Next.js/TypeScript RAG chatbot integrated with Prisma/Drizzle and LangChain for addiction recovery support. Achieved a 25% reduction in hosting costs by optimizing Vercel deployment through code splitting and serverless architecture. Fostered an engineering culture by implementing CI/CD best practices and managing feature development via ClickUp."
+                "description": "Spearheaded the design of a community recovery platform, focusing on mentor-mentee matching and progress tracking."
             },
             {
                 "company": "inVino.io",
@@ -110,7 +110,7 @@
                 "description": "Selling wine full time. One of the greatest jobs you could ever have."
             }
         ],
-        "skillsMessage": "'I don't even have any good skills. You know, like nunchuck skills, bow hunting skills, computer hacking skills. [Employers] only want [employees] who have great skills!' \n - Napoleon Dynamite",
+        "skillsMessage": "My Tech Stack, and the likelihood I'll use it any day",
         "skills": [
             {
                 "name": "javascript",
@@ -118,18 +118,18 @@
                 "level": "100%"
             },
             {
-                "name": "python",
-                "desc": "Python",
-                "level": "80%"
-            },
-            {
                 "name": "typescript",
                 "desc": "TypeScript",
-                "level": "90%"
+                "level": "100%"
+            },
+            {
+                "name": "python",
+                "desc": "Python",
+                "level": "100%"
             },
             {
                 "name": "git",
-                "desc": "GitHub/GitLab CI/CD",
+                "desc": "GitHub CI/CD",
                 "level": "100%"
             },
             {
@@ -140,12 +140,17 @@
             {
                 "name": "nodejs",
                 "desc": "NodeJS",
-                "level": "90%"
+                "level": "100%"
             },
             {
-                "name": "fastApi",
-                "desc": "FastAPI",
-                "level": "75%"
+                "name": "nextjs",
+                "desc": "NextJS",
+                "level": "100%"
+            },
+            {
+                "name": "linux",
+                "desc": "Linux (Fedora/Ubuntu)",
+                "level": "100%"
             },
             {
                 "name": "mongodb",
@@ -155,27 +160,22 @@
             {
                 "name": "postgresql",
                 "desc": "PostgreSQL",
-                "level": "80%"
+                "level": "95%"
+            },
+            {
+                "name": "fastApi",
+                "desc": "FastAPI",
+                "level": "90%"
             },
             {
                 "name": "docker",
                 "desc": "Docker",
-                "level": "50%"
-            },
-            {
-                "name": "linux",
-                "desc": "Linux (RHEL/Fedora/Ubuntu)",
                 "level": "80%"
             },
             {
-                "name": "bash",
-                "desc": "Bash",
-                "level": "75%"
-            },
-            {
-                "name": "packer",
-                "desc": "Packer",
-                "level": "50%"
+                "name": "aws",
+                "desc": "AWS",
+                "level": "80%"
             }
         ]
     },
@@ -197,6 +197,10 @@
                     "FastAPI",
                     "Docker",
                     "AWS EC2",
+                    "Scrapy",
+                    "n8n",
+                    "Supabase",
+                    "Stripe",
                     "Vercel"
                 ],
                 "blogUrl": "https://aaronfeingold.substack.com/p/from-rags-to-riches-how-to-pitch?r=5htajo",
@@ -231,6 +235,74 @@
                 ],
                 "blogUrl": "https://aaronfeingold.substack.com/p/from-rags-to-riches-building-the?r=5htajo",
                 "businessIdea": "FestVibes.ai is a platform that democratizes music festival experiences by allowing users to create personalized, decentralized festivals using local venues and events. Combines AI-powered discovery with social planning tools to help music communities connect and discover live music experiences in their area."
+            },
+            {
+                "id": "3",
+                "title": "the-tchoupitoulas-data-challenge",
+                "category": "Data Science and Analytics",
+                "image": "tchoup-data-challenge.png",
+                "url": "https://tchoupitoulas-data-challenge.vercel.app/",
+                "description": "A comprehensive data analysis platform for the Creole Creamery Hall of Fame challenge. Built a full-stack application that scrapes, processes, and visualizes competition data using LLM-powered web scraping, machine learning predictions, and interactive dashboards. Features include automated data collection via AWS Lambda, predictive modeling for competition timing, and beautiful data visualizations with real-time analytics.",
+                "techStack": [
+                    "Next.js 15",
+                    "TypeScript",
+                    "PostgreSQL",
+                    "Drizzle ORM",
+                    "NeonDB",
+                    "TailwindCSS",
+                    "shadcn/ui",
+                    "TanStack Query",
+                    "Recharts",
+                    "Python",
+                    "scikit-learn",
+                    "pandas",
+                    "numpy",
+                    "OpenAI GPT-4",
+                    "BeautifulSoup4",
+                    "AWS Lambda",
+                    "AWS EventBridge",
+                    "AWS ECR",
+                    "Terraform",
+                    "Docker",
+                    "Poetry",
+                    "Vercel"
+                ],
+                "blogUrl": "https://aaronfeingold.substack.com/p/from-rags-to-riches-building-the?r=5htajo",
+                "businessIdea": "The Tchoupitoulas Data Challenge is a sophisticated data analytics platform that demonstrates end-to-end data science capabilities. It combines automated data collection, machine learning predictions, and interactive visualizations to analyze competition patterns. The project showcases real-world data engineering skills including LLM-powered web scraping, predictive modeling with limited data, and building production-ready data dashboards. Perfect for demonstrating full-stack data science capabilities and infrastructure automation."
+            },
+            {
+                "id": "4",
+                "title": "Ariba Property Tax Assessment Platform",
+                "category": "Tax Services & Data Analytics",
+                "image": "ariba.png",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/418",
+                "description": "A comprehensive property tax assessment analysis platform designed to streamline tax appeal processes for attorneys. Features advanced data visualization, AI-powered property analysis, interactive mapping, and automated report generation. The platform helps tax attorneys identify potential appeal cases by analyzing property valuations, comparing similar properties, and generating detailed assessment reports with comparable property analysis.",
+                "techStack": [
+                    "Next.js",
+                    "TypeScript",
+                    "React",
+                    "Redux Toolkit",
+                    "Redux Persist",
+                    "Tailwind CSS",
+                    "shadcn/ui",
+                    "Radix UI",
+                    "Recharts",
+                    "Leaflet",
+                    "React Grid Layout",
+                    "Axios",
+                    "JWT Decode",
+                    "IndexedDB",
+                    "React Window",
+                    "TanStack Table",
+                    "Lucide React",
+                    "Sonner",
+                    "NextAuth.js",
+                    "Faker.js",
+                    "ESLint",
+                    "Vercel"
+                ],
+                "blogUrl": "https://aaronfeingold.substack.com/p/from-rags-to-riches-building-the?r=5htajo",
+                "businessIdea": "Ariba is a specialized platform that revolutionizes property tax assessment analysis for tax attorneys. By combining comprehensive property data with advanced analytics, interactive visualizations, and AI-powered analysis tools, it helps attorneys identify potential tax appeal opportunities more efficiently. The platform processes large datasets of property records, provides detailed comparable property analysis, generates automated reports, and offers interactive dashboards for data exploration and client presentation."
             }
         ]
     }
