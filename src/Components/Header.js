@@ -48,7 +48,6 @@ const Header = ({ data }) => {
                 <div className="banner-text">
                     <h1 className="responsive-headline">{name}</h1>
                     <h2>{description}</h2>
-                    <hr />
                     <ul className="social">
                         <SocialLinks social={social} location="header" />
                     </ul>
