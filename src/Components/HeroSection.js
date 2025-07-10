@@ -4,7 +4,7 @@ import BackgroundCarousel from './BackgroundCarousel';
 import { ResumeContext } from './ResumeContext';
 import SocialLinks from './SocialLinks';
 
-const Header = ({ data }) => {
+const HeroSection = ({ data }) => {
     const { loading } = useContext(ResumeContext);
 
     const {
@@ -62,4 +62,4 @@ const Header = ({ data }) => {
     );
 };
 
-export default Header;
+export default HeroSection;

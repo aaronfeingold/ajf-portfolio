@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { ResumeProvider, ResumeContext } from './Components/ResumeContext';
-import Header from './Components/Header';
+import HeroSection from './Components/HeroSection';
 import Footer from './Components/Footer';
 import About from './Components/About';
 import Resume from './Components/Resume';
@@ -33,7 +33,7 @@ const MainContent = () => {
                     </div>
                 </div>
             )}
-            <Header data={main} />
+            <HeroSection data={main} />
             <About data={main} />
             <Resume data={resume} />
             <Portfolio data={portfolio} />
