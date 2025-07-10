@@ -17,7 +17,10 @@ const About = ({ data }) => {
                     />
                 </div>
 
-                <div className="about-text column eight">
+                <div
+                    className="about-text column eight"
+                    style={{ padding: '0 20px' }}
+                >
                     <h2>About Me</h2>
                     {bio &&
                         bio
