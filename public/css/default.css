@@ -155,7 +155,7 @@ pre {
 
 blockquote,
 q {
-    quotes: "\201C" "\201D";
+    quotes: '\201C' '\201D';
 }
 
 blockquote:before,
@@ -212,6 +212,7 @@ table {
 html {
     font-size: 62.5%;
     -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -356,10 +357,6 @@ small {
     line-height: inherit;
 }
 
-
-
-
-
 hr {
     border: solid #e3e3e3;
     border-width: 1px 0 0;
@@ -437,12 +434,6 @@ ul.large li {
 }
 li p {
 }
-
-
-
-
-
-
 
 /*  5. Images  --------------------------------------------------------- */
 
@@ -527,8 +518,6 @@ input::-moz-focus-inner {
     padding: 0;
 }
 
-
-
 /* ------------------------------------------------------------------ */
 /* d. Grid
 ---------------------------------------------------------------------
@@ -612,10 +601,6 @@ input::-moz-focus-inner {
     width: 100%;
 }
 
-
-
-
-
 /* block grids
 --------------------------------------------------------------------- */
 .bgrid-halves [class*='column'] {
@@ -637,12 +622,6 @@ input::-moz-focus-inner {
         width: 50%;
     }
 }
-
-
-
-
-
-
 
 /* ------------------------------------------------------------------ */
 /* e. Others
@@ -693,6 +672,10 @@ input::-moz-focus-inner {
 
 .about-text {
     padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .about-buttons {
@@ -719,11 +702,33 @@ input::-moz-focus-inner {
     .about-wrapper {
         flex-direction: column;
         align-items: center;
-        text-align: center;
+        text-align: justify;
+    }
+
+    .about-text-paragraph {
+        width: 100%;
     }
 
     .about-text {
-        padding: 0;
+        padding: 0 16px;
+        width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    /* Remove column constraints on mobile */
+    .about-wrapper .column {
+        width: 100% !important;
+    }
+
+    /* Center profile pic on mobile */
+    .about-wrapper .column.four {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .profile-pic {
+        margin: 0 auto !important;
+        display: block !important;
     }
 
     .about-buttons {

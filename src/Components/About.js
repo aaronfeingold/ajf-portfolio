@@ -18,14 +18,17 @@ const About = ({ data }) => {
                 </div>
 
                 <div
+                    id="about-me"
                     className="about-text column eight"
-                    style={{ padding: '0 20px' }}
+                    // style={{ padding: '0 20px' }}
                 >
                     <h2>About Me</h2>
                     {bio &&
-                        bio
-                            .split('\n\n')
-                            .map((paragraph, i) => <p key={i}>{paragraph}</p>)}
+                        bio.split('\n\n').map((paragraph, i) => (
+                            <p className="about-text-paragraph" key={i}>
+                                {paragraph}
+                            </p>
+                        ))}
                     <div className="about-buttons">
                         <div className="address">
                             <h2>Contact Details</h2>
