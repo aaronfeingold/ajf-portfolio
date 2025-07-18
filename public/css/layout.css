@@ -30,7 +30,7 @@ body {
 
 header {
     position: relative;
-    height: 800px;
+    height: 100dvh;
     min-height: 500px;
     width: 100%;
     text-align: center;
