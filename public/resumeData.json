@@ -4,7 +4,7 @@
         "occupation": "Software Developer",
         "description": "software developer, sommelier, and entrepreneur",
         "image": "profile-image.jpg",
-        "bio": "I'm Aaron Feingold—a full-stack developer, wine aficionado, and entrepreneur based in New Orleans. My technical expertise spans Next.js, Express.js, MongoDB, FastAPI, PostgreSQL, and AWS, allowing me to build scalable web applications from frontend to backend and deploy them in the cloud.\n\nMy journey has taken me from the nuanced world of fine wines to the dynamic realm of technology, culminating in a mission to revolutionize how we experience wine through my venture, Vino Vibes AI.\n\nWith a foundation in full-stack development and a deep appreciation for viticulture, I've embarked on creating intelligent wine experiences that bridge the gap between vineyards, restaurants, and consumers. My platform leverages AI to develop tools that not only distribute quality wines efficiently but also democratize access to wine knowledge, making it an inclusive experience for all.\n\nMy mantra—Develop. Distribute. Democratize.—encapsulates this vision. It's about crafting experiential solutions that are as elegant as a fine Pinot Noir and as robust as a well-structured Cabernet, built with modern technologies like Next.js for seamless user experiences and FastAPI for performant backend services.\n\nBeyond my ventures, I'm seeking opportunities in full-stack development within startups that value innovation and authenticity. I bring to the table technical proficiency in modern web technologies, leadership experience, and a unique perspective shaped by years in both the wine industry and tech sector.\n\nIf you're interested in collaborating, investing, or simply sharing a glass of wine while discussing the future of tech-enabled experiences, let's connect.",
+        "bio": "I'm Aaron Feingold—a full-stack developer, wine aficionado, and entrepreneur based in New Orleans. My technical expertise spans TypeScript, Next.js, FastAPI, MongoDB, PostgreSQL, and AWS, enabling me to architect and deploy scalable, containerized applications that solve real-world problems.\n\nMy journey bridges the nuanced world of fine wines and the dynamic realm of technology, culminating in my mission to eliminate analysis paralysis in wine selection through my venture, Vino Vibes AI.\n\nVino Vibes AI represents my vision of democratizing sommelier-level wine knowledge. Rather than adding complexity, I'm building a comprehensive knowledge base that provides instant confidence in wine selection. The platform helps diners move from uncertainty to educated choices, transforming overwhelming wine lists into opportunities for memorable experiences.\n\nMy approach centers on three core principles: Knowledge. Confidence. Experience.\n\nKnowledge: Creating educational tools that distill complex wine expertise into accessible insights. Confidence: Eliminating the guesswork and analysis paralysis that prevents people from exploring new wines. Experience: Building technology that enhances real-world dining moments rather than replacing them.\n\nMy technical foundation includes modern containerized deployments with Docker, infrastructure as code, and automated CI/CD pipelines. I prioritize observable, scalable systems that can grow with ambitious projects—whether that's handling thousands of wine pairing requests or supporting distributed development teams working on secure EC2 environments.\n\nBeyond Vino Vibes AI, I'm actively seeking full-stack development opportunities within innovative startups that value authentic problem-solving and technical excellence. I bring proven experience in building production-ready applications, leading technical initiatives, and a unique perspective shaped by years in both hospitality and technology sectors.\n\nCurrently, I'm expanding my technical toolkit to include workflow automation and advanced knowledge management systems, always with an eye toward creating solutions that empower rather than overwhelm users.\n\nIf you're interested in collaborating on meaningful technology projects, discussing startup opportunities, or simply connecting over our shared appreciation for well-crafted solutions, let's talk.",
         "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
         "email": "ajfeingold88@gmail.com",
         "phone": "555-555-5555",
@@ -69,17 +69,17 @@
         "work": [
             {
                 "company": "Exclaim Recovery",
-                "title": "Lead Full Stack Engineer",
+                "title": "Full Stack Engineer",
                 "years": "March 2025 - Present",
                 "location": "New Orleans, LA",
                 "description": "Spearheaded the design of a community recovery platform, focusing on mentor-mentee matching and progress tracking."
             },
             {
-                "company": "inVino.io",
+                "company": "Vino Vibes AI",
                 "title": "Founder",
                 "location": "New Orleans, LA",
                 "years": "Nov. 2024 - Present",
-                "description": "Building the future of wine, one app at a time."
+                "description": "Building the future of wine, one pairing at a time."
             },
             {
                 "company": "Code Willing",
