@@ -12,8 +12,6 @@ const SocialLinks = ({ social }) => {
                         alt={network.name}
                         className={`social-icon ${network.className}`}
                         style={{
-                            width: '30px',
-                            height: '30px',
                             verticalAlign: 'middle',
                         }}
                     />

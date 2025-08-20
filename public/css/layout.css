@@ -111,6 +111,8 @@ header .social li a:hover {
 header .social li .social-icon {
     filter: brightness(0) invert(1);
     transition: filter 0.3s ease-in-out;
+    width: 1em;
+    height: 1em;
 }
 header .social li a:hover .social-icon {
     filter: brightness(0) invert(0.7) sepia(1) saturate(5) hue-rotate(152deg);
@@ -229,6 +231,13 @@ header background carousel
     /* Mobile adjustments */
     .carousel-image.founder-image {
         background-position: center 30%; /* Position higher on mobile to avoid text covering eyes */
+    }
+
+    /* Mobile adjustments for first image (header-bg-0.png) */
+    .carousel-image:first-child {
+        background-size: contain !important;
+        background-repeat: no-repeat;
+        background-position: center center !important;
     }
 
     /* Adjust banner text position on mobile */
