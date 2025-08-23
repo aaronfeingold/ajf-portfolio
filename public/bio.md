@@ -1,20 +1,24 @@
-## About Me
+# About Me
 
-I'm Aaron: a technical business developer in New Orleans.
+I'm Aaron: a technical founder in New Orleans, with a background in hospitality.
 
-My professional experience bridges the domains of sales and software development.
+As a sommelier, sales rep, and software engineer, I have focused my skills on solving the problems of the restaurant industry.
 
-Currently, I am building Vino Vibes: providing your best life with big, easy wine experiences.
+And so currently, I am building Vino Vibes: providing your best life with big, easy wine experiences.
 
-Beyond that, I work with small startups to ship 0→1 as a GTM software developer, specializing in cost and usage observability.
+Yet beyond that, I work with small startups to ship 0→1 as a GTM software developer, specializing in cost and usage observability.
 
 ## Technical Foundation
 
 **Highlights**: TypeScript, Next.js Python, FastAPI, SQL, and AWS.
 
+**Notes**: Cloud native applications, data pipelines, and API integrations.
+
 ## Professional Goals
 
-Currently, I'm expanding my technical services to include business workflow automation and advanced knowledge management systems, supporting marketing and advertising.
+Taking shape now, I'm expanding my technical services to include business workflow automation and advanced knowledge management systems, supporting marketing and advertising.
+
+I look for opportunities to make an fast paced impact in a validated problem, laying the groundwork for product growth.
 
 ## Let's Connect
 
