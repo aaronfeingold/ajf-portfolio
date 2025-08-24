@@ -16,8 +16,8 @@
         },
         "backgroundImages": [
             "/images/header-bg-0.png",
-            "/images/header-bg-1.jpg",
-            "/images/header-bg-2.jpg",
+            "/images/header-bg-1.png",
+            "/images/header-bg-2.png",
             "/images/header-bg-4-founder.jpg"
         ],
         "defaultBackground": "/images/testimonials-bg.jpg",

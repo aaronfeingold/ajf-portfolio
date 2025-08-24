@@ -1,25 +1,16 @@
 # About Me
 
-I'm Aaron: a technical founder in New Orleans, with a background in hospitality.
+I'm Aaron, a software engineer in New Orleans who builds 0→1 products that solve real business problems.
 
-As a sommelier, sales rep, and software engineer, I have focused my skills on solving the problems of the restaurant industry.
+I specialize in rapid product development - taking concepts from idea to live product in weeks, not months. My focus is helping early-stage startups and companies ship their first versions fast, with clean architecture that scales.
 
-And so currently, I am building Vino Vibes: providing your best life with big, easy wine experiences.
+Currently, I work with startups as a go-to-market software developer, building MVPs and focusing on cost/usage observability to help them grow efficiently.
 
-Yet beyond that, I work with small startups to ship 0→1 as a GTM software developer, specializing in cost and usage observability.
+## Technical Stack
+TypeScript, Next.js, Python, FastAPI, SQL, AWS - deployment of cloud-native applications and data pipelines.
 
-## Technical Foundation
+## What I Bring
+I combine technical execution with business instincts developed through hospitality and sales experience. This background taught me to understand customer needs deeply and deliver solutions that actually work in practice.
 
-**Highlights**: TypeScript, Next.js Python, FastAPI, SQL, and AWS.
-
-**Notes**: Cloud native applications, data pipelines, and API integrations.
-
-## Professional Goals
-
-Taking shape now, I'm expanding my technical services to include business workflow automation and advanced knowledge management systems, supporting marketing and advertising.
-
-I look for opportunities to make an fast paced impact in a validated problem, laying the groundwork for product growth.
-
-## Let's Connect
-
-If you're interested in collaborating to create software, develop startups, or simply connecting to sharing crazy ideas, let's talk.
+## Current Focus
+Seeking a software engineer role where I can apply my full-stack expertise to help innovate and deliver.
