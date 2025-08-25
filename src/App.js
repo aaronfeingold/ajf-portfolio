@@ -4,14 +4,13 @@ import { ResumeProvider, ResumeContext } from './Components/ResumeContext';
 import HeroSection from './Components/HeroSection';
 import Footer from './Components/Footer';
 import About from './Components/About';
-import Resume from './Components/Resume';
 import Portfolio from './Components/Portfolio';
 import ProjectDetail from './Components/ProjectDetail';
 import wetWilly from './ASCII/wetWilly';
 
 const MainContent = () => {
     const {
-        resumeData: { main, resume, portfolio },
+        resumeData: { main, portfolio },
         loading,
     } = useContext(ResumeContext);
 
@@ -35,7 +34,6 @@ const MainContent = () => {
             )}
             <HeroSection data={main} />
             <About data={main} />
-            <Resume data={resume} />
             <Portfolio data={portfolio} />
             <Footer data={main} />
         </>
