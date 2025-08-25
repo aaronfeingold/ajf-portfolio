@@ -181,7 +181,7 @@
                 "category": "Food and Wine",
                 "image": "vino-vibes.png",
                 "url": "https://vinovibes.ai",
-                "description": "Meet your Sommelier In Pocket: SIP by Vino Vibes is a platform that allows you to find the perfect wine for your vibe",
+                "description": "Meet your Sommelier In Pocket: SIP by Vino Vibes is a platform that allows you to find the perfect wine for your best vibe.",
                 "techStack": [
                     "Next.js",
                     "TailwindCSS",
@@ -198,7 +198,7 @@
                     "Vercel"
                 ],
                 "blogUrl": "https://aaronfeingold.substack.com/p/from-rags-to-riches-how-to-pitch?r=5htajo",
-                "businessIdea": "Vino Vibes meets diners where they are at to easil fine wine by getting millennials and Gen Z excited about ordering wine at restaurants. Our AI sommelier, SIP the Owl, creates hyper-personalized wine recommendations based on your unique vibes—think favorite athlete (Adam Ondra), music taste (heavy metal), and even your zodiac sign (Pisces)—to select the perfect wine from any restaurant's list. The app eliminates analysis paralysis by providing instant, confident selections while tracking your wine journey and enabling social sharing with fellow vino vibers. Restaurant staff can also use SIP to overcome knowledge gaps, making expert-level recommendations without hiring a sommelier. By combining custom food-wine pairings, personal taste tracking, and vibe-based AI matching, we're making fine wine accessible to everyone while tangentially boosting restaurant wine sales. It's about giving people confidence in their selections and making the wine experience social, personal, and fun."
+                "businessIdea": "Vino Vibes meets diners where they are at to easily fine wine by getting millennials and Gen Z excited about ordering wine at restaurants. Our AI sommelier, SIP the Owl, creates hyper-personalized wine recommendations based on your unique vibes—think favorite athlete (Adam Ondra), music taste (heavy metal), and even your zodiac sign (Pisces)—to select the perfect wine from any restaurant's list. The app eliminates analysis paralysis by providing instant, confident selections while tracking your wine journey and enabling social sharing with fellow vino vibers. Restaurant staff can also use SIP to overcome knowledge gaps, making expert-level recommendations without hiring a sommelier. By combining custom food-wine pairings, personal taste tracking, and vibe-based AI matching, we're making fine wine accessible to everyone while tangentially boosting restaurant wine sales. It's about giving people confidence in their selections and making the wine experience social, personal, and fun."
             },
             {
                 "id": "2",
