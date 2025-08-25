@@ -15,7 +15,7 @@ const MainContent = () => {
     } = useContext(ResumeContext);
 
     useEffect(() => {
-        console.log(wetWilly); // shout out to millennial s8rs
+        console.log(wetWilly); // shout out
     }, []);
 
     return (

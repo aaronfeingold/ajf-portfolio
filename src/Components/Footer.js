@@ -12,7 +12,7 @@ const Footer = ({ data }) => {
                     </ul>
                     <ul className="copyright">
                         <li>&copy; Copyright 2025 Aaron Feingold</li>
-                        <li>Develop. Distribute. Democratize.</li>
+                        <li>Ideate, Develop, and Ship</li>
                     </ul>
                 </div>
                 <div id="go-top">
