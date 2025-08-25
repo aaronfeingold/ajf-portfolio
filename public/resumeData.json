@@ -3,6 +3,7 @@
         "name": "Aaron Feingold",
         "occupation": "Software Developer",
         "description": "software developer, sommelier, and entrepreneur",
+        "mantra": "Ideate, Develop, and Ship",
         "image": "profile-image.jpg",
         "bio": "I'm Aaron Feingold. A full-stack developer, sommelier, and entrepreneur based in New Orleans. My tech stack includes TypeScript, Next.js, FastAPI, PostgreSQL, and AWS.\n\nMy experience bridges the domains of fine wine and technology. I've also been a founder, and sales rep.\n\n I'm building a comprehensive knowledge base that provides instant confidence in wine selection.\n\n At Vino Vibes, we provide the path for sommelier-level wine selections intuitively. The platform helps diners move from uncertainty to educated choices, transforming overwhelming wine lists into opportunities for memorable experiences.\n\nMy approach centers on three core principles: Knowledge. Confidence. Experience.\n\nKnowledge: Creating educational tools that distill complex wine expertise into accessible insights. Confidence: Eliminating the guesswork and analysis paralysis that prevents people from exploring new wines. Experience: Building technology that enhances real-world dining moments rather than replacing them.\n\nMy technical foundation includes modern containerized deployments with Docker, infrastructure as code, and automated CI/CD pipelines. I prioritize observable, scalable systems that can grow with ambitious projects—whether that's handling thousands of wine pairing requests or supporting distributed development teams working on secure EC2 environments.\n\nBeyond Vino Vibes AI, I'm actively seeking full-stack development opportunities within innovative startups that value authentic problem-solving and technical excellence. I bring proven experience in building production-ready applications, leading technical initiatives, and a unique perspective shaped by years in both hospitality and technology sectors.\n\nCurrently, I'm expanding my technical toolkit to include workflow automation and advanced knowledge management systems, always with an eye toward creating solutions that empower rather than overwhelm users.\n\nIf you're interested in collaborating on meaningful technology projects, discussing startup opportunities, or simply connecting over our shared appreciation for well-crafted solutions, let's talk.",
         "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
@@ -180,7 +181,7 @@
                 "category": "Food and Wine",
                 "image": "vino-vibes.png",
                 "url": "https://vinovibes.ai",
-                "description": "Meet SIP the Owl, your sommelier in pocket. SIP by vino vibes is a platform that allows you to find the perfect wine for your vibe",
+                "description": "Meet your Sommelier In Pocket: SIP by Vino Vibes is a platform that allows you to find the perfect wine for your vibe",
                 "techStack": [
                     "Next.js",
                     "TailwindCSS",
@@ -197,15 +198,15 @@
                     "Vercel"
                 ],
                 "blogUrl": "https://aaronfeingold.substack.com/p/from-rags-to-riches-how-to-pitch?r=5htajo",
-                "businessIdea": "VinoVibes democratizes fine wine by getting millennials and Gen Z excited about ordering wine at restaurants. Our AI sommelier, SIP the Owl, creates hyper-personalized wine recommendations based on your unique vibes—think favorite athlete (Adam Ondra), music taste (heavy metal), and even your zodiac sign (Pisces)—to select the perfect wine from any restaurant's list. The app eliminates analysis paralysis by providing instant, confident selections while tracking your wine journey and enabling social sharing with fellow vino vibers. Restaurant staff can also use SIP to overcome knowledge gaps, making expert-level recommendations without hiring a sommelier. By combining custom food-wine pairings, personal taste tracking, and vibe-based AI matching, we're making fine wine accessible to everyone while tangentially boosting restaurant wine sales. It's about giving people confidence in their selections and making the wine experience social, personal, and fun."
+                "businessIdea": "Vino Vibes meets diners where they are at to easil fine wine by getting millennials and Gen Z excited about ordering wine at restaurants. Our AI sommelier, SIP the Owl, creates hyper-personalized wine recommendations based on your unique vibes—think favorite athlete (Adam Ondra), music taste (heavy metal), and even your zodiac sign (Pisces)—to select the perfect wine from any restaurant's list. The app eliminates analysis paralysis by providing instant, confident selections while tracking your wine journey and enabling social sharing with fellow vino vibers. Restaurant staff can also use SIP to overcome knowledge gaps, making expert-level recommendations without hiring a sommelier. By combining custom food-wine pairings, personal taste tracking, and vibe-based AI matching, we're making fine wine accessible to everyone while tangentially boosting restaurant wine sales. It's about giving people confidence in their selections and making the wine experience social, personal, and fun."
             },
             {
                 "id": "2",
                 "title": "festvibes.ai",
                 "category": "Music and Events",
                 "image": "fest-vibes.png",
-                "url": "https://fest-vibes-nola.netlify.app/",
-                "description": "Transform any day into a personalized music festival. A decentralized music discovery platform that helps users discover live local music, plan with friends, and create the ultimate festival experience. Features AI-powered event recommendations, social collaboration tools, venue insights, and community-driven music discovery for New Orleans music lovers.",
+                "url": "https://fest-vibes-ai.vercel.app/",
+                "description": "Fest Vibes is a current edge music discovery platform that transforms live event data into personalized festival experiences through real-time ETL pipelines, vector embeddings, and \"Boomy,\" our intelligent planning assistant. Users can discover local music events, coordinate with friends, and create decentralized festivals from New Orleans venues using semantic search and social collaboration tools.",
                 "techStack": [
                     "Next.js",
                     "TypeScript",
@@ -227,7 +228,7 @@
                     "Vercel"
                 ],
                 "blogUrl": "https://aaronfeingold.substack.com/p/from-rags-to-riches-building-the?r=5htajo",
-                "businessIdea": "FestVibes.ai is a platform that democratizes music festival experiences by allowing users to create personalized, decentralized festivals using local venues and events. Combines AI-powered discovery with social planning tools to help music communities connect and discover live music experiences in their area."
+                "businessIdea": "FestVibes.ai solves music discovery paralysis by aggregating fragmented event data into an intelligent platform that learns user preferences and enables personalized festival creation from local venues. Our AI-first approach creates network effects through social coordination and preference matching, positioning us to monetize through premium subscriptions, venue partnerships, and data licensing as we scale from New Orleans to music-rich cities nationwide."
             },
             {
                 "id": "3",
